@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+pdfs/gravity/
+m204_watch.log
+pdfs/post2024/m204_found.json

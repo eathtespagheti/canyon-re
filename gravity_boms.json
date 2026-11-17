@@ -1,0 +1,2019 @@
+[
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe1a83a00/explosiondrawings/2009/torque/M18-09_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2009/torque/M18-09_BOM_ts.pdf",
+    "asset_year": "2009",
+    "asset_family": "torque",
+    "filename": "M18-09_BOM_ts.pdf",
+    "model_codes": [
+      "M18-09"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2009"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque ES"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwa501fb80/explosiondrawings/2009/torque/M19-09_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2009/torque/M19-09_BOM_ts.pdf",
+    "asset_year": "2009",
+    "asset_family": "torque",
+    "filename": "M19-09_BOM_ts.pdf",
+    "model_codes": [
+      "M19-09"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2009"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw28f65f29/explosiondrawings/2009/torque/M20-09_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2009/torque/M20-09_BOM_ts.pdf",
+    "asset_year": "2009",
+    "asset_family": "torque",
+    "filename": "M20-09_BOM_ts.pdf",
+    "model_codes": [
+      "M20-09"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2009"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque FRX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwd5306542/explosiondrawings/2010/torque/M19-10_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2010/torque/M19-10_BOM_ts.pdf",
+    "asset_year": "2010",
+    "asset_family": "torque",
+    "filename": "M19-10_BOM_ts.pdf",
+    "model_codes": [
+      "M19-10"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2010"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque M19-10"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3b856ff5/explosiondrawings/2010/torque/M20-10_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2010/torque/M20-10_BOM_ts.pdf",
+    "asset_year": "2010",
+    "asset_family": "torque",
+    "filename": "M20-10_BOM_ts.pdf",
+    "model_codes": [
+      "M20-10"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2010"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque FRX M20-10"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwdb278773/explosiondrawings/2011/strive/M23-11_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2011/strive/M23-11_BOM_ts.pdf",
+    "asset_year": "2011",
+    "asset_family": "strive",
+    "filename": "M23-11_BOM_ts.pdf",
+    "model_codes": [
+      "M23-11"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2011"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive ES"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw645d9ed3/explosiondrawings/2011/strive/M25-11_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2011/strive/M25-11_BOM_ts.pdf",
+    "asset_year": "2011",
+    "asset_family": "strive",
+    "filename": "M25-11_BOM_ts.pdf",
+    "model_codes": [
+      "M25-11"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2011"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive ESX"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw9e2bbfb1/explosiondrawings/2011/torque/M19-11_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2011/torque/M19-11_BOM_ts.pdf",
+    "asset_year": "2011",
+    "asset_family": "torque",
+    "filename": "M19-11_BOM_ts.pdf",
+    "model_codes": [
+      "M19-11"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2011"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque M19-11"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb6c28060/explosiondrawings/2011/torque/M20-11_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2011/torque/M20-11_BOM_ts.pdf",
+    "asset_year": "2011",
+    "asset_family": "torque",
+    "filename": "M20-11_BOM_ts.pdf",
+    "model_codes": [
+      "M20-11"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2011"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque FRX M20-11"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw0731c91d/explosiondrawings/2012/strive/M23-12_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2012/strive/M23-12_BOM_ts.pdf",
+    "asset_year": "2012",
+    "asset_family": "strive",
+    "filename": "M23-12_BOM_ts.pdf",
+    "model_codes": [
+      "M23-12"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2012"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive ES"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcfc803e1/explosiondrawings/2012/strive/M25-12_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2012/strive/M25-12_BOM_ts.pdf",
+    "asset_year": "2012",
+    "asset_family": "strive",
+    "filename": "M25-12_BOM_ts.pdf",
+    "model_codes": [
+      "M25-12"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2012"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive ESX"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw0b325fc0/explosiondrawings/2012/torque/M19-12_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2012/torque/M19-12_BOM_ts.pdf",
+    "asset_year": "2012",
+    "asset_family": "torque",
+    "filename": "M19-12_BOM_ts.pdf",
+    "model_codes": [
+      "M19-12"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2012"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque M19-12"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw92304b50/explosiondrawings/2012/torque/M20-12_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2012/torque/M20-12_BOM_ts.pdf",
+    "asset_year": "2012",
+    "asset_family": "torque",
+    "filename": "M20-12_BOM_ts.pdf",
+    "model_codes": [
+      "M20-12"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2012"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque FRX M20-12"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb1c1ccba/explosiondrawings/2013/strive/M23-13_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2013/strive/M23-13_BOM_ts.pdf",
+    "asset_year": "2013",
+    "asset_family": "strive",
+    "filename": "M23-13_BOM_ts.pdf",
+    "model_codes": [
+      "M23-13"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2013"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwbc6c6f29/explosiondrawings/2013/torque/M19-13_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2013/torque/M19-13_BOM_ts.pdf",
+    "asset_year": "2013",
+    "asset_family": "torque",
+    "filename": "M19-13_BOM_ts.pdf",
+    "model_codes": [
+      "M19-13"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2013"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque EX M19-13"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw90d35c3d/explosiondrawings/2013/torque/M20-13_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2013/torque/M20-13_BOM_ts.pdf",
+    "asset_year": "2013",
+    "asset_family": "torque",
+    "filename": "M20-13_BOM_ts.pdf",
+    "model_codes": [
+      "M20-13"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2013"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque FRX M20-13"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwc5b726ba/explosiondrawings/2014/nerve/M17-14_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2014/nerve/M17-14_BOM_ts.pdf",
+    "asset_year": "2014",
+    "asset_family": "nerve",
+    "filename": "M17-14_BOM_ts.pdf",
+    "model_codes": [
+      "M17-14"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2014"
+    ],
+    "categories": [
+      "Nerve/Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb9f7f421/explosiondrawings/2014/nerve/M32-14_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2014/nerve/M32-14_BOM_ts.pdf",
+    "asset_year": "2014",
+    "asset_family": "nerve",
+    "filename": "M32-14_BOM_ts.pdf",
+    "model_codes": [
+      "M32-14"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2014"
+    ],
+    "categories": [
+      "Nerve/Spectral"
+    ],
+    "labels": [
+      "Spectral AL 29"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw6730e6c6/explosiondrawings/2014/strive/M23-14_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2014/strive/M23-14_BOM_ts.pdf",
+    "asset_year": "2014",
+    "asset_family": "strive",
+    "filename": "M23-14_BOM_ts.pdf",
+    "model_codes": [
+      "M23-14"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2014"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw85c1936c/explosiondrawings/2014/torque/M19-14_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2014/torque/M19-14_BOM_ts.pdf",
+    "asset_year": "2014",
+    "asset_family": "torque",
+    "filename": "M19-14_BOM_ts.pdf",
+    "model_codes": [
+      "M19-14"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2014"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque EX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw0c63f222/explosiondrawings/2014/torque/M20-14_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2014/torque/M20-14_BOM_ts.pdf",
+    "asset_year": "2014",
+    "asset_family": "torque",
+    "filename": "M20-14_BOM_ts.pdf",
+    "model_codes": [
+      "M20-14"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2014"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque DHX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwa71e70cd/explosiondrawings/2015/spectral/M17-15_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/spectral/M17-15_BOM_ts.pdf",
+    "asset_year": "2015",
+    "asset_family": "spectral",
+    "filename": "M17-15_BOM_ts.pdf",
+    "model_codes": [
+      "M17-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwec0bd4f9/explosiondrawings/2015/spectral/M32-15_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/spectral/M32-15_BOM_ts.pdf",
+    "asset_year": "2015",
+    "asset_family": "spectral",
+    "filename": "M32-15_BOM_ts.pdf",
+    "model_codes": [
+      "M32-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL 29"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw4d916a39/explosiondrawings/2015/spectral/M33-15_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/spectral/M33-15_BOM_ts.pdf",
+    "asset_year": "2015",
+    "asset_family": "spectral",
+    "filename": "M33-15_BOM_ts.pdf",
+    "model_codes": [
+      "M33-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw735d77a2/explosiondrawings/2015/strive/M24-15_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/strive/M24-15_BOM.pdf",
+    "asset_year": "2015",
+    "asset_family": "strive",
+    "filename": "M24-15_BOM.pdf",
+    "model_codes": [
+      "M24-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwc3597142/explosiondrawings/2015/strive/M27-15_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/strive/M27-15_BOM.pdf",
+    "asset_year": "2015",
+    "asset_family": "strive",
+    "filename": "M27-15_BOM.pdf",
+    "model_codes": [
+      "M27-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CF"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3f2cbf0c/explosiondrawings/2015/torque/M19-15_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/torque/M19-15_BOM_ts.pdf",
+    "asset_year": "2015",
+    "asset_family": "torque",
+    "filename": "M19-15_BOM_ts.pdf",
+    "model_codes": [
+      "M19-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque EX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw75e5c5d8/explosiondrawings/2015/torque/M20-15_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2015/torque/M20-15_BOM_ts.pdf",
+    "asset_year": "2015",
+    "asset_family": "torque",
+    "filename": "M20-15_BOM_ts.pdf",
+    "model_codes": [
+      "M20-15"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2015"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque DHX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3da80cda/explosiondrawings/2016/sender/M34-16_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/sender/M34-16_BOM_ts.pdf",
+    "asset_year": "2016",
+    "asset_family": "sender",
+    "filename": "M34-16_BOM_ts.pdf",
+    "model_codes": [
+      "M34-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender CF"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb186195b/explosiondrawings/2016/spectral/M17-16_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/spectral/M17-16_BOM_ts.pdf",
+    "asset_year": "2016",
+    "asset_family": "spectral",
+    "filename": "M17-16_BOM_ts.pdf",
+    "model_codes": [
+      "M17-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw28ebbfb4/explosiondrawings/2016/spectral/M33-16_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/spectral/M33-16_BOM_ts.pdf",
+    "asset_year": "2016",
+    "asset_family": "spectral",
+    "filename": "M33-16_BOM_ts.pdf",
+    "model_codes": [
+      "M33-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwa60870dc/explosiondrawings/2016/strive/M24-16_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/strive/M24-16_BOM.pdf",
+    "asset_year": "2016",
+    "asset_family": "strive",
+    "filename": "M24-16_BOM.pdf",
+    "model_codes": [
+      "M24-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwf3d4547f/explosiondrawings/2016/strive/M27-16_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/strive/M27-16_BOM.pdf",
+    "asset_year": "2016",
+    "asset_family": "strive",
+    "filename": "M27-16_BOM.pdf",
+    "model_codes": [
+      "M27-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CF"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw4e13c2db/explosiondrawings/2016/torque/M20-16_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2016/torque/M20-16_BOM_ts.pdf",
+    "asset_year": "2016",
+    "asset_family": "torque",
+    "filename": "M20-16_BOM_ts.pdf",
+    "model_codes": [
+      "M20-16"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2016"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque DHX"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw919fcb57/explosiondrawings/2017/sender/M34-17_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2017/sender/M34-17_BOM_ts.pdf",
+    "asset_year": "2017",
+    "asset_family": "sender",
+    "filename": "M34-17_BOM_ts.pdf",
+    "model_codes": [
+      "M34-17"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2017"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender CF"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw1d3de267/explosiondrawings/2017/spectral/M17-17_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2017/spectral/M17-17_BOM_ts.pdf",
+    "asset_year": "2017",
+    "asset_family": "spectral",
+    "filename": "M17-17_BOM_ts.pdf",
+    "model_codes": [
+      "M17-17"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2017"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb48310bf/explosiondrawings/2017/spectral/M33-17_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2017/spectral/M33-17_BOM_ts.pdf",
+    "asset_year": "2017",
+    "asset_family": "spectral",
+    "filename": "M33-17_BOM_ts.pdf",
+    "model_codes": [
+      "M33-17"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2017"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwf96f4ad2/explosiondrawings/2017/strive/M024-01_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2017/strive/M024-01_BOM.pdf",
+    "asset_year": "2017",
+    "asset_family": "strive",
+    "filename": "M024-01_BOM.pdf",
+    "model_codes": [
+      "M024-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2017"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw0b23114b/explosiondrawings/2017/strive/M027-01_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2017/strive/M027-01_BOM.pdf",
+    "asset_year": "2017",
+    "asset_family": "strive",
+    "filename": "M027-01_BOM.pdf",
+    "model_codes": [
+      "M027-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2017"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CF"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw1859cd00/explosiondrawings/2018/sender/M34-18_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/sender/M34-18_BOM_ts.pdf",
+    "asset_year": "2018",
+    "asset_family": "sender",
+    "filename": "M34-18_BOM_ts.pdf",
+    "model_codes": [
+      "M34-18"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender CF"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb53a54c7/explosiondrawings/2018/spectral/M054-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/spectral/M054-01_BOM_ts.pdf",
+    "asset_year": "2018",
+    "asset_family": "spectral",
+    "filename": "M054-01_BOM_ts.pdf",
+    "model_codes": [
+      "M054-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw9c1b46db/explosiondrawings/2018/spectral/M055-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/spectral/M055-01_BOM_ts.pdf",
+    "asset_year": "2018",
+    "asset_family": "spectral",
+    "filename": "M055-01_BOM_ts.pdf",
+    "model_codes": [
+      "M055-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw21a82613/explosiondrawings/2018/spectral/M064-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/spectral/M064-01_BOM_ts.pdf",
+    "asset_year": "2018",
+    "asset_family": "spectral",
+    "filename": "M064-01_BOM_ts.pdf",
+    "model_codes": [
+      "M064-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral:ON"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8794a499/explosiondrawings/2018/strive/M024-01_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/strive/M024-01_BOM.pdf",
+    "asset_year": "2018",
+    "asset_family": "strive",
+    "filename": "M024-01_BOM.pdf",
+    "model_codes": [
+      "M024-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive AL"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwaa75f58e/explosiondrawings/2018/strive/M027-01_BOM.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2018/strive/M027-01_BOM.pdf",
+    "asset_year": "2018",
+    "asset_family": "strive",
+    "filename": "M027-01_BOM.pdf",
+    "model_codes": [
+      "M027-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CF"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwbb3743ee/explosiondrawings/2019/neuron_spectral/M050-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M050-01_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M050-01_BOM_ts.pdf",
+    "model_codes": [
+      "M050-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral AL WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw0fdbb521/explosiondrawings/2019/neuron_spectral/M053-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M053-01_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M053-01_BOM_ts.pdf",
+    "model_codes": [
+      "M053-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw1d505e1c/explosiondrawings/2019/neuron_spectral/M054-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M054-02_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M054-02_BOM_ts.pdf",
+    "model_codes": [
+      "M054-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwc0587dbf/explosiondrawings/2019/neuron_spectral/M055-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M055-02_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M055-02_BOM_ts.pdf",
+    "model_codes": [
+      "M055-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral CF WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc4e78d8/explosiondrawings/2019/neuron_spectral/M064-01_M093-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M064-01_M093-01_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M064-01_M093-01_BOM_ts.pdf",
+    "model_codes": [
+      "M064-01",
+      "M093-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral ON / Neuron ON"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw5b29975d/explosiondrawings/2019/neuron_spectral/M071-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M071-02_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M071-02_BOM_ts.pdf",
+    "model_codes": [
+      "M071-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral Hybrid"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwdba70403/explosiondrawings/2019/neuron_spectral/M074-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/neuron_spectral/M074-02_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "neuron_spectral",
+    "filename": "M074-02_BOM_ts.pdf",
+    "model_codes": [
+      "M074-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Neuron/Spectral"
+    ],
+    "labels": [
+      "Spectral Hybrid WMN"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8974e7e1/explosiondrawings/2019/sender/M34-19_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2019/sender/M34-19_BOM_ts.pdf",
+    "asset_year": "2019",
+    "asset_family": "sender",
+    "filename": "M34-19_BOM_ts.pdf",
+    "model_codes": [
+      "M34-19"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2019"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender CF"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw2f6be5eb/explosiondrawings/2020/spectral/M054-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2020/spectral/M054-02_BOM_ts.pdf",
+    "asset_year": "2020",
+    "asset_family": "spectral",
+    "filename": "M054-02_BOM_ts.pdf",
+    "model_codes": [
+      "M054-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2020"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw5b36d9f0/explosiondrawings/2020/spectral/M055-02_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2020/spectral/M055-02_BOM_ts.pdf",
+    "asset_year": "2020",
+    "asset_family": "spectral",
+    "filename": "M055-02_BOM_ts.pdf",
+    "model_codes": [
+      "M055-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2020"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw9488dbfd/explosiondrawings/2020/spectral_on/M098-01_BOM_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2020/spectral_on/M098-01_BOM_ts.pdf",
+    "asset_year": "2020",
+    "asset_family": "spectral_on",
+    "filename": "M098-01_BOM_ts.pdf",
+    "model_codes": [
+      "M098-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2020"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwdd6d2849/explosiondrawings/2021/sender/M047-01_BOM_Sender AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/sender/M047-01_BOM_Sender AL.pdf",
+    "asset_year": "2021",
+    "asset_family": "sender",
+    "filename": "M047-01_BOM_Sender AL.pdf",
+    "model_codes": [
+      "M047-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender AL"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw956f8eac/explosiondrawings/2021/sender/M086-01_BOM_Sender CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/sender/M086-01_BOM_Sender CFR.pdf",
+    "asset_year": "2021",
+    "asset_family": "sender",
+    "filename": "M086-01_BOM_Sender CFR.pdf",
+    "model_codes": [
+      "M086-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2021"
+    ],
+    "categories": [
+      "Sender"
+    ],
+    "labels": [
+      "Sender CFR"
+    ],
+    "family": "Sender",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwef791d26/explosiondrawings/2021/spectral/M050-01_BOM_Spectral AL WMN.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral/M050-01_BOM_Spectral AL WMN.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral",
+    "filename": "M050-01_BOM_Spectral AL WMN.pdf",
+    "model_codes": [
+      "M050-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3d4f6380/explosiondrawings/2021/spectral/M053-01_BOM_Spectral AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral/M053-01_BOM_Spectral AL.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral",
+    "filename": "M053-01_BOM_Spectral AL.pdf",
+    "model_codes": [
+      "M053-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwb61e2d8b/explosiondrawings/2021/spectral/M071-02_BOM_Spectral CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral/M071-02_BOM_Spectral CF.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral",
+    "filename": "M071-02_BOM_Spectral CF.pdf",
+    "model_codes": [
+      "M071-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF | M071-02",
+      "Spectral HYBRID",
+      "Spectral Hybrid"
+    ],
+    "family": "Spectral",
+    "kind": "MTB/e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw54d19f84/explosiondrawings/2021/spectral/M074-02_BOM_Spectral CF WMN.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral/M074-02_BOM_Spectral CF WMN.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral",
+    "filename": "M074-02_BOM_Spectral CF WMN.pdf",
+    "model_codes": [
+      "M074-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF WMN | M074-02",
+      "Spectral HYBRID WMN",
+      "Spectral Hybrid WMN"
+    ],
+    "family": "Spectral",
+    "kind": "MTB/e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwbb0fb8e5/explosiondrawings/2021/spectral/M121-01_BOM_Spectral CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral/M121-01_BOM_Spectral CF.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral",
+    "filename": "M121-01_BOM_Spectral CF.pdf",
+    "model_codes": [
+      "M121-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2021"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF | M121-01"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw03b178c7/explosiondrawings/2021/spectral_on/M123-01_BOM_Spectral ON_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/spectral_on/M123-01_BOM_Spectral ON_ts.pdf",
+    "asset_year": "2021",
+    "asset_family": "spectral_on",
+    "filename": "M123-01_BOM_Spectral ON_ts.pdf",
+    "model_codes": [
+      "M123-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2021"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw42a2a803/explosiondrawings/2021/strive/M065-01_M066-01_BOM__Strive CF_CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/strive/M065-01_M066-01_BOM__Strive CF_CFR.pdf",
+    "asset_year": "2021",
+    "asset_family": "strive",
+    "filename": "M065-01_M066-01_BOM__Strive CF_CFR.pdf",
+    "model_codes": [
+      "M065-01",
+      "M066-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CF | CFR"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3f517238/explosiondrawings/2021/torque/M041-02_BOM_Torque AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/torque/M041-02_BOM_Torque AL.pdf",
+    "asset_year": "2021",
+    "asset_family": "torque",
+    "filename": "M041-02_BOM_Torque AL.pdf",
+    "model_codes": [
+      "M041-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque AL"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwc5ef603b/explosiondrawings/2021/torque/M068-02_BOM_Torque CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/torque/M068-02_BOM_Torque CF.pdf",
+    "asset_year": "2021",
+    "asset_family": "torque",
+    "filename": "M068-02_BOM_Torque CF.pdf",
+    "model_codes": [
+      "M068-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque CF"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwdc4a23a9/explosiondrawings/2021/torque/M106-01_BOM_Torque CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/torque/M106-01_BOM_Torque CF.pdf",
+    "asset_year": "2021",
+    "asset_family": "torque",
+    "filename": "M106-01_BOM_Torque CF.pdf",
+    "model_codes": [
+      "M106-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2021"
+    ],
+    "categories": [
+      "Torque"
+    ],
+    "labels": [
+      "Torque CF | M106-01"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw7fe8a9d4/explosiondrawings/2021/torque_on/M085-01_BOM_Torque ON_ts.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2021/torque_on/M085-01_BOM_Torque ON_ts.pdf",
+    "asset_year": "2021",
+    "asset_family": "torque_on",
+    "filename": "M085-01_BOM_Torque ON_ts.pdf",
+    "model_codes": [
+      "M085-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2021"
+    ],
+    "categories": [
+      "Torque:ON"
+    ],
+    "labels": [
+      "Torque:ON"
+    ],
+    "family": "Torque:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw062db10e/explosiondrawings/2022/spectral/M114-01_BOM_Spectral AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral/M114-01_BOM_Spectral AL.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral",
+    "filename": "M114-01_BOM_Spectral AL.pdf",
+    "model_codes": [
+      "M114-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8187aab7/explosiondrawings/2022/spectral/M120-01_BOM_Spectral CF KIS.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral/M120-01_BOM_Spectral CF KIS.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral",
+    "filename": "M120-01_BOM_Spectral CF KIS.pdf",
+    "model_codes": [
+      "M120-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF KIS"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwf536fbc2/explosiondrawings/2022/spectral/M122-01_BOM_Spectral CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral/M122-01_BOM_Spectral CFR.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral",
+    "filename": "M122-01_BOM_Spectral CFR.pdf",
+    "model_codes": [
+      "M122-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CFR"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwab89a816/explosiondrawings/2022/spectral/M144-01_BOM_Spectral 125 CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral/M144-01_BOM_Spectral 125 CF.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral",
+    "filename": "M144-01_BOM_Spectral 125 CF.pdf",
+    "model_codes": [
+      "M144-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral 125 CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8e3a4e64/explosiondrawings/2022/spectral/M148-01_BOM_Spectral 125 AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral/M148-01_BOM_Spectral 125 AL.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral",
+    "filename": "M148-01_BOM_Spectral 125 AL.pdf",
+    "model_codes": [
+      "M148-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral 125 AL"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw1450071e/explosiondrawings/2022/spectral_on/M091-01_BOM_Spectral ON CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral_on/M091-01_BOM_Spectral ON CFR.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral_on",
+    "filename": "M091-01_BOM_Spectral ON CFR.pdf",
+    "model_codes": [
+      "M091-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON CFR"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwde7177c8/explosiondrawings/2022/spectral_on/M129-01_BOM_Spectral ON CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/spectral_on/M129-01_BOM_Spectral ON CF.pdf",
+    "asset_year": "2022",
+    "asset_family": "spectral_on",
+    "filename": "M129-01_BOM_Spectral ON CF.pdf",
+    "model_codes": [
+      "M129-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON CF"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw190c2a8d/explosiondrawings/2022/strive/M147-01_BOM_Strive CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/strive/M147-01_BOM_Strive CFR.pdf",
+    "asset_year": "2022",
+    "asset_family": "strive",
+    "filename": "M147-01_BOM_Strive CFR.pdf",
+    "model_codes": [
+      "M147-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022"
+    ],
+    "categories": [
+      "Strive"
+    ],
+    "labels": [
+      "Strive CFR"
+    ],
+    "family": "Strive",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw4c24ba36/explosiondrawings/2022/torque_al/M113-01_BOM_Torque AL.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2022/torque_al/M113-01_BOM_Torque AL.pdf",
+    "asset_year": "2022",
+    "asset_family": "torque_al",
+    "filename": "M113-01_BOM_Torque AL.pdf",
+    "model_codes": [
+      "M113-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2022",
+      "2023"
+    ],
+    "categories": [
+      "Torque AL"
+    ],
+    "labels": [
+      "Torque AL"
+    ],
+    "family": "Torque",
+    "kind": "MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw228e2828/explosiondrawings/2023/spectral_on/M091-02_BOM_Spectral ON CFR.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2023/spectral_on/M091-02_BOM_Spectral ON CFR.pdf",
+    "asset_year": "2023",
+    "asset_family": "spectral_on",
+    "filename": "M091-02_BOM_Spectral ON CFR.pdf",
+    "model_codes": [
+      "M091-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2023"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON CFR"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwf6a010ce/explosiondrawings/2023/spectral_on/M129-02_BOM_Spectral ON CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2023/spectral_on/M129-02_BOM_Spectral ON CF.pdf",
+    "asset_year": "2023",
+    "asset_family": "spectral_on",
+    "filename": "M129-02_BOM_Spectral ON CF.pdf",
+    "model_codes": [
+      "M129-02"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2023"
+    ],
+    "categories": [
+      "Spectral:ON"
+    ],
+    "labels": [
+      "Spectral:ON CF"
+    ],
+    "family": "Spectral:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwf7fc509a/explosiondrawings/2023/strive_on/M158-01_BOM_Strive ON.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2023/strive_on/M158-01_BOM_Strive ON.pdf",
+    "asset_year": "2023",
+    "asset_family": "strive_on",
+    "filename": "M158-01_BOM_Strive ON.pdf",
+    "model_codes": [
+      "M158-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2023"
+    ],
+    "categories": [
+      "Strive:ON"
+    ],
+    "labels": [
+      "Strive:ON"
+    ],
+    "family": "Strive:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe04ba3e2/explosiondrawings/2023/torque_on/M124-01_BOM_Torque ON CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2023/torque_on/M124-01_BOM_Torque ON CF.pdf",
+    "asset_year": "2023",
+    "asset_family": "torque_on",
+    "filename": "M124-01_BOM_Torque ON CF.pdf",
+    "model_codes": [
+      "M124-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2023"
+    ],
+    "categories": [
+      "Torque:ON"
+    ],
+    "labels": [
+      "Torque:ON CF"
+    ],
+    "family": "Torque:ON",
+    "kind": "e-MTB"
+  },
+  {
+    "url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwbcdf6997/explosiondrawings/2024/spectral/M179-01_BOM_Spectral CF.pdf",
+    "url_stable": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/2024/spectral/M179-01_BOM_Spectral CF.pdf",
+    "asset_year": "2024",
+    "asset_family": "spectral",
+    "filename": "M179-01_BOM_Spectral CF.pdf",
+    "model_codes": [
+      "M179-01"
+    ],
+    "disciplines": [
+      "MTB"
+    ],
+    "catalog_years": [
+      "2024"
+    ],
+    "categories": [
+      "Spectral"
+    ],
+    "labels": [
+      "Spectral CF"
+    ],
+    "family": "Spectral",
+    "kind": "MTB"
+  }
+]

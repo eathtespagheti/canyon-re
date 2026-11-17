@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canyon BOM Explorer</title>
+<style>
+  :root{
+    --bg:#0e1015; --panel:#161a22; --panel2:#1c212b; --line:#2a3140;
+    --text:#e9ecf3; --muted:#98a2b3; --accent:#ff6a2b; --accent2:#6ea8fe;
+    --green:#43d17a; --amber:#f0b429; --red:#ff5d6c; --blue:#6ea8fe;
+    --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:radial-gradient(1200px 600px at 20% -10%, #24170f 0, transparent 60%),
+                radial-gradient(900px 500px at 90% 0, #101d33 0, transparent 55%), var(--bg);
+    color:var(--text); font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  }
+  a{color:var(--accent2); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .hero{padding:42px 22px 24px}
+  .hero-inner{max-width:1380px;margin:0 auto}
+  .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:11px}
+  h1{font-size:clamp(30px,4.5vw,54px);line-height:1.02;margin:10px 0 8px;letter-spacing:-.03em}
+  .sub{color:var(--muted);max-width:840px;margin:0;font-size:16px}
+  .stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+  .stat{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:999px;padding:7px 13px;font-size:12.5px;color:var(--muted)}
+  .stat b{color:var(--text);font-size:14px;margin-right:5px}
+  .tabs{position:sticky;top:0;z-index:30;display:flex;gap:8px;overflow:auto;padding:12px 22px;
+        background:rgba(14,16,21,.82);backdrop-filter:blur(14px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .tabs-inner{max-width:1380px;margin:0 auto;display:flex;gap:8px;width:100%}
+  .tab{appearance:none;border:1px solid transparent;background:transparent;color:var(--muted);padding:9px 14px;border-radius:10px;
+       font-weight:650;cursor:pointer;white-space:nowrap;font-size:13.5px}
+  .tab:hover{color:var(--text);background:rgba(255,255,255,.05)}
+  .tab.active{color:#111;background:var(--accent);border-color:var(--accent)}
+  main{max-width:1380px;margin:0 auto;padding:22px}
+  .panel{display:none}
+  .panel.active{display:block}
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px}
+  .toolbar input,.toolbar select{appearance:none;background:var(--panel);border:1px solid var(--line);color:var(--text);
+       border-radius:10px;padding:10px 12px;font:inherit;font-size:13.5px;outline:none}
+  .toolbar input:focus,.toolbar select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,106,43,.15)}
+  .toolbar input{min-width:260px;flex:1 1 320px}
+  .toolbar select{min-width:150px}
+  .btn{appearance:none;background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:10px;
+       padding:9px 12px;font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+  .btn:hover{border-color:#3a4458;background:#222835}
+  .btn.accent{background:var(--accent);border-color:var(--accent);color:#111}
+  .count{color:var(--muted);font-size:12.5px;margin-left:auto}
+  .table-wrap{border:1px solid var(--line);border-radius:14px;overflow:auto;background:var(--panel)}
+  table{border-collapse:separate;border-spacing:0;width:100%;min-width:840px}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px}
+  th{position:sticky;top:0;z-index:2;background:#1b2029;color:var(--muted);font-size:11px;letter-spacing:.08em;
+     text-transform:uppercase;cursor:pointer;user-select:none;white-space:nowrap}
+  th:hover{color:var(--text)}
+  th .arrow{opacity:.55;margin-left:5px;font-size:10px}
+  tbody tr{cursor:pointer}
+  tbody tr:hover{background:#1b212c}
+  tbody tr:last-child td{border-bottom:0}
+  .name{font-weight:650}
+  .subline{color:var(--muted);font-size:12px;margin-top:2px}
+  .code{font-family:var(--mono);font-size:12.5px;background:#0f131a;border:1px solid #2b3342;border-radius:6px;padding:2px 6px;white-space:nowrap}
+  .badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;line-height:1.55;white-space:nowrap}
+  .b-exact{background:rgba(67,209,122,.14);color:var(--green);border:1px solid rgba(67,209,122,.3)}
+  .b-sibling{background:rgba(110,168,254,.14);color:var(--blue);border:1px solid rgba(110,168,254,.3)}
+  .b-inferred{background:rgba(240,180,41,.14);color:var(--amber);border:1px solid rgba(240,180,41,.3)}
+  .b-none{background:rgba(255,93,108,.13);color:var(--red);border:1px solid rgba(255,93,108,.3)}
+  .b-ok{background:rgba(67,209,122,.14);color:var(--green);border:1px solid rgba(67,209,122,.3)}
+  .b-wait{background:rgba(255,93,108,.13);color:var(--red);border:1px solid rgba(255,93,108,.3)}
+  .b-new{background:rgba(110,168,254,.14);color:var(--blue);border:1px solid rgba(110,168,254,.3)}
+  .b-neutral{background:rgba(255,255,255,.06);color:var(--muted);border:1px solid var(--line)}
+  .links{white-space:nowrap}
+  .links a{display:inline-block;padding:3px 7px;border:1px solid var(--line);border-radius:7px;margin-right:5px;font-size:12px}
+  .links a:hover{border-color:var(--accent);text-decoration:none}
+  .empty{padding:30px;text-align:center;color:var(--muted);display:none}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .card h3{margin:0 0 4px;font-size:20px;letter-spacing:-.01em}
+  .card .meta{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+  .card p{color:var(--muted);font-size:13.5px;margin:8px 0}
+  .card .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+  .card code{font-family:var(--mono);font-size:12px;background:#0f131a;border:1px solid #2b3342;border-radius:7px;padding:5px 7px;word-break:break-all}
+  .product-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .chip{display:inline-block;padding:4px 8px;border:1px solid var(--line);border-radius:8px;font-size:12px;color:var(--text);background:#12161d}
+  .chip:hover{border-color:var(--accent);text-decoration:none}
+  .chip.small{padding:2px 6px;font-size:11px;max-width:190px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .chip.muted{color:var(--muted);border-style:dashed}
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.68);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+  .modal.open{display:flex}
+  .modal-card{background:var(--panel);border:1px solid var(--line);border-radius:18px;max-width:760px;width:100%;max-height:88vh;overflow:auto;
+              padding:22px;position:relative;box-shadow:0 30px 90px rgba(0,0,0,.55)}
+  .modal-close{position:absolute;right:14px;top:12px;background:transparent;border:0;color:var(--muted);font-size:26px;cursor:pointer;line-height:1}
+  .modal-close:hover{color:var(--text)}
+  .modal h2{margin:0 34px 4px 0;font-size:24px;letter-spacing:-.02em}
+  .modal .badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 16px}
+  .kv{display:grid;grid-template-columns:170px 1fr;gap:8px 14px;font-size:13.5px}
+  .kv dt{color:var(--muted)}
+  .kv dd{margin:0;word-break:break-word}
+  .kv .copy{cursor:pointer;border:1px solid var(--line);background:#12161d;color:var(--muted);border-radius:6px;padding:1px 6px;font-size:11px;margin-left:6px}
+  .kv .copy:hover{color:var(--text);border-color:var(--accent)}
+  .section-title{margin:20px 0 8px;font-size:12px;letter-spacing:.1em;color:var(--muted);text-transform:uppercase}
+  .footer{max-width:1380px;margin:36px auto 0;padding:22px;color:var(--muted);font-size:12.5px;border-top:1px solid var(--line)}
+  .footer a{color:var(--muted)}
+  .pager{display:flex;gap:8px;align-items:center;justify-content:flex-end;margin-top:12px;color:var(--muted);font-size:12.5px}
+  .pager button{appearance:none;background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:8px;padding:5px 10px;cursor:pointer}
+  .pager button:disabled{opacity:.35;cursor:default}
+  .hint{color:var(--muted);font-size:12px;margin:0 0 12px}
+  .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);opacity:0;background:#0b0d12;border:1px solid var(--line);
+         color:var(--text);padding:10px 14px;border-radius:10px;font-size:13px;transition:.2s;z-index:200;pointer-events:none}
+  .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+  @media (max-width:820px){
+    .hide-sm{display:none}
+    .toolbar input{min-width:100%}
+    .count{margin-left:0}
+    .kv{grid-template-columns:1fr}
+    .kv dt{margin-top:6px}
+    th,td{padding:9px 10px}
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Canyon gravity MTB · reverse-engineered archive</div>
+    <h1>Canyon BOM Explorer</h1>
+    <p class="sub">Browse the scraped product pages, frame codes and exploded drawings for Spectral, Strive, Torque and Sender — including <b>:ON</b> e-MTB variants.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner" id="tabs">
+    <button class="tab active" data-tab="products">Products</button>
+    <button class="tab" data-tab="boms">Gravity BOMs</button>
+    <button class="tab" data-tab="post2024">Post-2024 / M204</button>
+    <button class="tab" data-tab="archive">Full archive</button>
+  </div>
+</nav>
+
+<main>
+  <section class="panel active" id="panel-products">
+    <p class="hint">One row per bike/tier product page. Click a row for frame code, BOM PDF and confidence details. <b>exact</b> = code from Canyon’s endpoint or the product image; <b>inferred</b> rows need verification.</p>
+    <div class="toolbar">
+      <input id="p-search" type="search" placeholder="Search product, ID, frame code, BOM…  (press /)" autocomplete="off">
+      <select id="p-family"><option value="">All families</option></select>
+      <select id="p-year"><option value="">All years</option></select>
+      <select id="p-confidence">
+        <option value="">All confidence</option>
+        <option value="exact">exact</option>
+        <option value="inferred-sibling">inferred-sibling</option>
+        <option value="inferred">inferred</option>
+        <option value="none">none</option>
+      </select>
+      <select id="p-status">
+        <option value="">All BOM status</option>
+        <option value="published">published</option>
+        <option value="pending">not published</option>
+      </select>
+      <select id="p-source">
+        <option value="">All sources</option>
+        <option value="live">live pages</option>
+        <option value="wayback">recovered (2019–2021)</option>
+      </select>
+      <button class="btn" id="p-export">Export CSV</button>
+      <span class="count" id="p-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="p-table">
+        <thead><tr>
+          <th data-sort="product_name">Product <span class="arrow"></span></th>
+          <th data-sort="model_year">Year <span class="arrow"></span></th>
+          <th data-sort="family">Family <span class="arrow"></span></th>
+          <th class="hide-sm" data-sort="material">Material <span class="arrow"></span></th>
+          <th data-sort="frame_code">Frame <span class="arrow"></span></th>
+          <th data-sort="bom_code">BOM <span class="arrow"></span></th>
+          <th class="hide-sm" data-sort="match_confidence">Confidence <span class="arrow"></span></th>
+          <th data-sort="bom_published">Status <span class="arrow"></span></th>
+          <th>Links</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="empty" id="p-empty">No products match these filters.</div>
+  </section>
+
+  <section class="panel" id="panel-boms">
+    <p class="hint">The 2009–2024 gravity archive plus the root-level post-2024 BOMs (M178, M180, M185, M188). M204 is tracked separately because it is not published yet. The <b>Products</b> column links directly to every mapped product page; older BOMs whose product pages were never scraped fall back to a Canyon search.</p>
+    <div class="toolbar">
+      <input id="b-search" type="search" placeholder="Search code, name, family, category…" autocomplete="off">
+      <select id="b-family"><option value="">All folders</option></select>
+      <select id="b-year"><option value="">All years</option></select>
+      <select id="b-status">
+        <option value="">All status</option>
+        <option value="published">published</option>
+        <option value="pending">not published</option>
+      </select>
+      <button class="btn" id="b-export">Export CSV</button>
+      <span class="count" id="b-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="b-table">
+        <thead><tr>
+          <th data-sort="code">Code <span class="arrow"></span></th>
+          <th data-sort="label">Name / label <span class="arrow"></span></th>
+          <th data-sort="asset_year">Year <span class="arrow"></span></th>
+          <th class="hide-sm" data-sort="asset_family">Folder <span class="arrow"></span></th>
+          <th class="hide-sm" data-sort="catalog_years">Catalog years <span class="arrow"></span></th>
+          <th data-sort="published">Status <span class="arrow"></span></th>
+          <th>Products</th>
+          <th>PDF</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="empty" id="b-empty">No BOMs match these filters.</div>
+  </section>
+
+  <section class="panel" id="panel-post2024">
+    <p class="hint">Frames whose drawings live at the flat root path <code>explosiondrawings/explosiondrawing-{code}-{rev}.pdf</code>. M204 is the 2027 Avinox Spectral:ON — the bike is not on sale yet, so no drawing is registered.</p>
+    <div class="cards" id="post2024-cards"></div>
+  </section>
+
+  <section class="panel" id="panel-archive">
+    <p class="hint">All 479 unique PDFs discovered on the 2009–2024 model-year pages, across every bike family. The <b>Products</b> column shows direct links for scraped gravity product pages; older/unscraped entries fall back to Canyon search.</p>
+    <div class="toolbar">
+      <input id="a-search" type="search" placeholder="Search year, family, code, filename…" autocomplete="off">
+      <select id="a-year"><option value="">All years</option></select>
+      <select id="a-family"><option value="">All folders</option></select>
+      <label class="btn" style="display:flex;align-items:center;gap:7px;cursor:pointer"><input id="a-gravity" type="checkbox" style="accent-color:var(--accent)"> Gravity only</label>
+      <button class="btn" id="a-export">Export CSV</button>
+      <span class="count" id="a-count"></span>
+    </div>
+    <div class="table-wrap">
+      <table id="a-table">
+        <thead><tr>
+          <th data-sort="asset_year">Year <span class="arrow"></span></th>
+          <th data-sort="asset_family">Folder <span class="arrow"></span></th>
+          <th data-sort="codes">Model codes <span class="arrow"></span></th>
+          <th data-sort="label">Name / label <span class="arrow"></span></th>
+          <th>Products</th>
+          <th>PDF</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="pager">
+      <span id="a-pageinfo"></span>
+      <button id="a-prev">Prev</button>
+      <button id="a-next">Next</button>
+    </div>
+    <div class="empty" id="a-empty">No archive entries match these filters.</div>
+  </section>
+</main>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-card" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<footer class="footer">
+  <div>Data generated <span id="generated"></span> · <a href="README.md">README</a> · <a href="M204.md">M204 notes</a> · <a href="gravity_products.csv">gravity_products.csv</a> · <a href="gravity_product_bom_map.csv">product/BOM map</a></div>
+  <div style="margin-top:6px">Public Canyon static PDFs + product metadata. Verify inferred mappings against the frame code on the bike before ordering parts.</div>
+</footer>
+
+<script>
+const DATA = /*__DATA__*/;
+
+/* ---------- helpers ---------- */
+const $ = (s, el = document) => el.querySelector(s);
+const $$ = (s, el = document) => Array.from(el.querySelectorAll(s));
+const esc = (v) => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const escAttr = (v) => esc(v).replace(/`/g, '&#96;');
+const truthy = (v) => v === true || v === 'True' || v === 'true' || v === '1' || v === 1;
+const formatPrice = (v) => {
+  const n = Number(v);
+  return Number.isFinite(n) ? n.toLocaleString('en-US', { maximumFractionDigits: 0 }) : v;
+};
+const uniq = (a) => Array.from(new Set(a.filter(x => x !== undefined && x !== null && x !== ''))).sort();
+const list = (v) => Array.isArray(v) ? v : (v ? String(v).split(';').filter(Boolean) : []);
+const firstCode = (r) => (r.model_codes && r.model_codes[0]) || r.bom_code || r.frame_code || '';
+const baseCode = (c) => String(c || '').replace(/-\d{2}$/, '');
+const codeText = (r) => (r.model_codes || []).join(', ');
+function productsForBom(r) {
+  const codes = new Set((r.model_codes || []).map(baseCode).filter(Boolean));
+  if (!codes.size) return [];
+  return (DATA.products || []).filter(p =>
+    (p.bom_code && codes.has(baseCode(p.bom_code))) ||
+    (p.frame_code && codes.has(baseCode(p.frame_code)))
+  );
+}
+function productChips(products, max = 2) {
+  if (!products || !products.length) return '<span class="subline">—</span>';
+  const shown = products.slice(0, max);
+  const rest = products.length - shown.length;
+  return `<div class="product-chips">${shown.map(p =>
+    `<a class="chip small" href="${escAttr(p.product_url)}" target="_blank" rel="noopener" title="${escAttr(p.product_name + ' · ' + (p.model_year || ''))}">${esc(p.product_name)}</a>`
+  ).join('')}${rest > 0 ? `<span class="chip small muted">+${rest} more</span>` : ''}</div>`;
+}
+function allProductChips(products) {
+  return `<div class="product-chips">${products.map(p =>
+    `<a class="chip" href="${escAttr(p.product_url)}" target="_blank" rel="noopener">${esc(p.product_name)} · ${esc(p.model_year || '')}</a>`
+  ).join('')}</div>`;
+}
+const canyonSearchUrl = (q) => `https://www.canyon.com/en-it/search/?q=${encodeURIComponent(q)}`;
+function productsCell(r, max = 2) {
+  const products = productsForBom(r);
+  if (products.length) return productChips(products, max);
+  const q = (r.labels && r.labels[0]) || firstCode(r) || '';
+  return q
+    ? `<a class="chip small muted" href="${escAttr(canyonSearchUrl(q))}" target="_blank" rel="noopener" title="No scraped product page; search Canyon">find on Canyon</a>`
+    : '<span class="subline">—</span>';
+}
+const labelText = (r) => (r.labels || []).join(' / ') || r.product_name || r.filename || '';
+const familyText = (r) => (r.asset_family || r.family || '').replaceAll('_', ' ');
+const yearText = (r) => r.asset_year || r.model_year || '';
+const searchBlob = (r) => Object.values(r).map(v => Array.isArray(v) ? v.join(' ') : (v ?? '')).join(' ').toLowerCase();
+const badge = (text, cls) => `<span class="badge ${cls}">${esc(text)}</span>`;
+const confidenceBadge = (c) => {
+  const cls = c === 'exact' ? 'b-exact' : c === 'inferred-sibling' ? 'b-sibling' : c === 'inferred' ? 'b-inferred' : 'b-none';
+  return badge(c || 'unknown', cls);
+};
+const statusBadge = (published) => published ? badge('published', 'b-ok') : badge('not published', 'b-wait');
+const link = (url, text) => url ? `<a href="${escAttr(url)}" target="_blank" rel="noopener">${esc(text || url)}</a>` : '';
+const copyBtn = (text) => `<button class="copy" data-copy="${escAttr(text)}">copy</button>`;
+const toast = (msg) => { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1500); };
+
+function copyText(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(() => toast('Copied')).catch(() => fallbackCopy(text));
+  } else fallbackCopy(text);
+}
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); toast('Copied'); } catch(e) { toast('Copy failed'); }
+  ta.remove();
+}
+
+function sortRows(rows, key, dir) {
+  const val = (r) => {
+    if (key === 'code') return firstCode(r);
+    if (key === 'label') return labelText(r);
+    if (key === 'codes') return codeText(r);
+    if (key === 'catalog_years') return (r.catalog_years || []).join(',');
+    if (key === 'published') return truthy(r.published) ? 1 : 0;
+    const v = r[key] ?? '';
+    return Array.isArray(v) ? v.join(',') : v;
+  };
+  return [...rows].sort((a, b) => {
+    const av = val(a), bv = val(b);
+    const an = parseFloat(av), bn = parseFloat(bv);
+    const numeric = !isNaN(an) && !isNaN(bn) && String(av).trim() !== '' && String(bv).trim() !== '';
+    const cmp = numeric ? an - bn : String(av).localeCompare(String(bv), undefined, { numeric: true, sensitivity: 'base' });
+    return cmp * dir;
+  });
+}
+
+function downloadCsv(filename, rows, columns) {
+  const csvEsc = (v) => {
+    const s = Array.isArray(v) ? v.join(';') : String(v ?? '');
+    return /[",\n]/.test(s) ? '"' + s.replaceAll('"', '""') + '"' : s;
+  };
+  const text = [columns.join(',')].concat(rows.map(r => columns.map(c => csvEsc(r[c])).join(','))).join('\n');
+  const blob = new Blob([text], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+/* ---------- stats ---------- */
+function renderStats() {
+  const products = DATA.products || [];
+  const exact = products.filter(p => p.match_confidence === 'exact').length;
+  const pending = products.filter(p => !truthy(p.bom_published)).length;
+  const archived = products.filter(p => p.page_source === 'wayback').length;
+  const archiveOnly = products.filter(p => p.link_source === 'wayback').length;
+  $('#stats').innerHTML = [
+    [products.length, 'product pages'],
+    [archived, 'recovered pages'],
+    [archiveOnly, 'archive-only links'],
+    [(DATA.boms || []).length, 'gravity BOMs'],
+    [(DATA.archive || []).length, 'archive PDFs'],
+    [exact, 'exact mappings'],
+    [pending, 'pending/unpublished'],
+  ].map(([n, label]) => `<span class="stat"><b>${n}</b> ${esc(label)}</span>`).join('');
+  $('#generated').textContent = DATA.generated_at || '';
+}
+
+/* ---------- products ---------- */
+const pState = { search: '', family: '', year: '', confidence: '', status: '', source: '', sort: 'product_name', dir: 1 };
+function filteredProducts() {
+  const q = pState.search.trim().toLowerCase();
+  return (DATA.products || []).filter(r => {
+    if (q && !searchBlob(r).includes(q)) return false;
+    if (pState.family && r.family !== pState.family) return false;
+    if (pState.year && String(r.model_year) !== pState.year) return false;
+    if (pState.confidence && r.match_confidence !== pState.confidence) return false;
+    if (pState.status === 'published' && !truthy(r.bom_published)) return false;
+    if (pState.status === 'pending' && truthy(r.bom_published)) return false;
+    if (pState.source && (r.page_source || 'live') !== pState.source) return false;
+    return true;
+  });
+}
+function renderProducts() {
+  const rows = sortRows(filteredProducts(), pState.sort, pState.dir);
+  const tbody = $('#p-table tbody');
+  tbody.innerHTML = rows.map((r, i) => `
+    <tr data-type="product" data-index="${DATA.products.indexOf(r)}">
+      <td><div class="name">${r.product_url ? `<a href="${escAttr(r.product_url)}" target="_blank" rel="noopener">${esc(r.product_name)}</a>` : esc(r.product_name)}${r.link_source === 'wayback' ? ' ' + badge('archive-only', 'b-wait') : (r.page_source === 'wayback' ? ' ' + badge('legacy', 'b-neutral') : '')}</div><div class="subline">ID ${esc(r.product_id)}${r.price_min ? ' · €' + esc(formatPrice(r.price_min)) : ''}</div></td>
+      <td>${esc(r.model_year || '—')}</td>
+      <td>${esc(r.family || '—')}${truthy(r.electric) ? ' <span class="badge b-new">e</span>' : ''}</td>
+      <td class="hide-sm">${esc(r.material || '—')}</td>
+      <td><span class="code">${esc(r.frame_code || '—')}</span></td>
+      <td><span class="code">${esc(r.bom_code || '—')}</span><div class="subline">${esc(r.bom_label || '')}</div></td>
+      <td class="hide-sm">${confidenceBadge(r.match_confidence)}</td>
+      <td>${statusBadge(truthy(r.bom_published))}</td>
+      <td class="links">
+        ${r.product_url ? `<a href="${escAttr(r.product_url)}" target="_blank" rel="noopener">product</a>` : ''}
+        ${r.bom_url ? `<a href="${escAttr(r.bom_url)}" target="_blank" rel="noopener">PDF</a>` : ''}
+      </td>
+    </tr>`).join('');
+  $('#p-count').textContent = `${rows.length} / ${(DATA.products || []).length}`;
+  $('#p-empty').style.display = rows.length ? 'none' : 'block';
+  updateArrows('#p-table', pState);
+}
+
+/* ---------- gravity BOMs ---------- */
+const bState = { search: '', family: '', year: '', status: '', sort: 'code', dir: 1 };
+function filteredBoms() {
+  const q = bState.search.trim().toLowerCase();
+  return (DATA.boms || []).filter(r => {
+    if (q && !searchBlob(r).includes(q)) return false;
+    if (bState.family && r.asset_family !== bState.family) return false;
+    if (bState.year && String(r.asset_year) !== bState.year) return false;
+    if (bState.status === 'published' && !truthy(r.published ?? true)) return false;
+    if (bState.status === 'pending' && truthy(r.published ?? true)) return false;
+    return true;
+  });
+}
+function renderBoms() {
+  const rows = sortRows(filteredBoms(), bState.sort, bState.dir);
+  const tbody = $('#b-table tbody');
+  tbody.innerHTML = rows.map((r) => `
+    <tr data-type="bom" data-index="${DATA.boms.indexOf(r)}">
+      <td><span class="code">${esc(firstCode(r) || '—')}</span>${r.post2024 ? ' <span class="badge b-new">new</span>' : ''}</td>
+      <td><div class="name">${esc(labelText(r))}</div><div class="subline">${esc(r.filename || '')}</div></td>
+      <td>${esc(r.asset_year || '—')}</td>
+      <td class="hide-sm">${esc(familyText(r) || '—')}</td>
+      <td class="hide-sm">${esc((r.catalog_years || []).join(', ') || '—')}</td>
+      <td>${statusBadge(truthy(r.published ?? true))}</td>
+      <td>${productsCell(r, 2)}</td>
+      <td class="links">${r.url_stable || r.url ? `<a href="${escAttr(r.url_stable || r.url)}" target="_blank" rel="noopener">PDF</a>` : ''}</td>
+    </tr>`).join('');
+  $('#b-count').textContent = `${rows.length} / ${(DATA.boms || []).length}`;
+  $('#b-empty').style.display = rows.length ? 'none' : 'block';
+  updateArrows('#b-table', bState);
+}
+
+/* ---------- post-2024 / M204 ---------- */
+const POST_CODES = ['M178', 'M180', 'M185', 'M188', 'M204'];
+const POST_META = {
+  M178: { title: 'Spectral AL', year: '2025', note: 'Aluminium Spectral frame used by Spectral 5 / 6 / AL LTD / CLLCTV.' },
+  M180: { title: 'Sender CFR', year: '2025', note: 'Downhill Sender CFR frame. The PDF is a 7-page document.' },
+  M185: { title: 'Torque AL', year: '2026', note: 'Aluminium Torque frame used by Torque AL 7 / 8 / 9 / DH.' },
+  M188: { title: 'Strive:ON', year: '2026', note: 'Avinox-era Strive:ON frame used by CF 8 / CF 9 / CFR.' },
+  M204: { title: 'Spectral:ON', year: '2027', note: 'Pre-launch Avinox Spectral:ON frame. Not published yet.' },
+};
+function renderPost2024() {
+  const cards = POST_CODES.map(code => {
+    const b = (DATA.boms || []).find(x => (x.model_codes || []).includes(code));
+    const products = (DATA.products || []).filter(p => p.bom_code === code);
+    const published = !!b && truthy(b.published ?? true);
+    const meta = POST_META[code];
+    const chips = products.map(p => `<a class="chip" href="${escAttr(p.product_url)}" target="_blank" rel="noopener">${esc(p.product_name)} · ${esc(p.model_year)}</a>`).join('');
+    const pdf = b ? `<a class="btn accent" href="${escAttr(b.url_stable || b.url)}" target="_blank" rel="noopener">Open PDF</a>` : '';
+    const local = b && b.local_file ? `<a class="btn" href="${escAttr(b.local_file)}" target="_blank" rel="noopener">Local copy</a>` : '';
+    const m204 = code === 'M204' ? `
+      <p><b>Status:</b> ${statusBadge(false)} “Coming soon” — pre-orders from <b>4 Dec 2026</b>, deliveries from <b>19 Jan 2027</b>.</p>
+      <p>Canyon’s serial/PID endpoint reports <i>“We couldn’t find any exploded drawing that matches your serial number.”</i> The expected path is:</p>
+      <code>.../explosiondrawings/explosiondrawing-M204-01.pdf</code>
+      <div class="row"><button class="btn" data-copy="python3 watch_m204.py --once">Copy watcher command</button><button class="btn" data-copy="https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/explosiondrawing-M204-01.pdf">Copy expected URL</button></div>
+    ` : '';
+    return `<article class="card">
+      <h3><span class="code">${esc(code)}</span> ${esc(meta.title)}</h3>
+      <div class="meta">${esc(meta.year)} · ${products.length} mapped product page${products.length === 1 ? '' : 's'} · ${published ? badge('published', 'b-ok') : badge('not published', 'b-wait')}</div>
+      <p>${esc(meta.note)}</p>
+      ${m204}
+      <div class="row">${pdf}${local}${!published && code !== 'M204' ? '<span class="badge b-wait">waiting for release</span>' : ''}</div>
+      <div class="product-chips">${chips || '<span class="subline">No product pages mapped yet.</span>'}</div>
+    </article>`;
+  }).join('');
+  $('#post2024-cards').innerHTML = cards;
+}
+
+/* ---------- full archive ---------- */
+const aState = { search: '', year: '', family: '', gravity: false, sort: 'asset_year', dir: -1, page: 1, perPage: 100 };
+const GRAVITY_FOLDERS = new Set(['spectral','spectral_on','strive','strive_on','torque','torque_al','torque_on','sender']);
+function isGravityArchive(r) {
+  const labels = (r.labels || []).join(' ');
+  const labelHit = /spectral|strive|torque|sender/i.test(labels);
+  if (r.asset_family === 'nerve' || r.asset_family === 'neuron_spectral') return labelHit;
+  if (GRAVITY_FOLDERS.has(r.asset_family)) return true;
+  return labelHit || /spectral|strive|torque|sender/i.test((r.categories || []).join(' '));
+}
+function filteredArchive() {
+  const q = aState.search.trim().toLowerCase();
+  return (DATA.archive || []).filter(r => {
+    if (q && !searchBlob(r).includes(q)) return false;
+    if (aState.year && String(r.asset_year) !== aState.year) return false;
+    if (aState.family && r.asset_family !== aState.family) return false;
+    if (aState.gravity && !isGravityArchive(r)) return false;
+    return true;
+  });
+}
+function renderArchive() {
+  const all = sortRows(filteredArchive(), aState.sort, aState.dir);
+  const pages = Math.max(1, Math.ceil(all.length / aState.perPage));
+  aState.page = Math.min(Math.max(1, aState.page), pages);
+  const start = (aState.page - 1) * aState.perPage;
+  const rows = all.slice(start, start + aState.perPage);
+  const tbody = $('#a-table tbody');
+  tbody.innerHTML = rows.map(r => `
+    <tr data-type="archive" data-index="${DATA.archive.indexOf(r)}">
+      <td>${esc(r.asset_year || '—')}</td>
+      <td>${esc(familyText(r))}</td>
+      <td><span class="code">${esc(codeText(r) || '—')}</span></td>
+      <td><div class="name">${esc(labelText(r))}</div><div class="subline">${esc(r.filename || '')}</div></td>
+      <td>${productsCell(r, 2)}</td>
+      <td class="links"><a href="${escAttr(r.url_stable || r.url)}" target="_blank" rel="noopener">PDF</a></td>
+    </tr>`).join('');
+  $('#a-count').textContent = `${all.length} / ${(DATA.archive || []).length}`;
+  $('#a-empty').style.display = all.length ? 'none' : 'block';
+  $('#a-pageinfo').textContent = all.length ? `Page ${aState.page} of ${pages} · ${all.length} rows` : '0 rows';
+  $('#a-prev').disabled = aState.page <= 1;
+  $('#a-next').disabled = aState.page >= pages;
+  updateArrows('#a-table', aState);
+}
+
+function updateArrows(tableSel, st) {
+  $$(tableSel + ' th[data-sort]').forEach(th => {
+    const arrow = $('.arrow', th);
+    if (!arrow) return;
+    arrow.textContent = th.dataset.sort === st.sort ? (st.dir > 0 ? '▲' : '▼') : '';
+  });
+}
+
+/* ---------- modal ---------- */
+function kv(label, value, copyValue) {
+  if (value === undefined || value === null || value === '') return '';
+  return `<dt>${esc(label)}</dt><dd>${value}${copyValue ? copyBtn(copyValue) : ''}</dd>`;
+}
+function openProduct(index) {
+  const r = DATA.products[index]; if (!r) return;
+  const html = `
+    <h2>${esc(r.product_name)}</h2>
+    <div class="badges">${badge(r.model_year || '—', 'b-neutral')}${r.link_source === 'wayback' ? badge('archive-only', 'b-wait') : (r.page_source === 'wayback' ? badge('legacy', 'b-neutral') : badge('live', 'b-ok'))}${confidenceBadge(r.match_confidence)}${statusBadge(truthy(r.bom_published))}${truthy(r.electric) ? badge('e-MTB', 'b-new') : ''}</div>
+    <dl class="kv">
+      ${kv('Product ID', esc(r.product_id))}
+      ${kv('Family', esc(r.family) + (r.material ? ' · ' + esc(r.material) : ''))}
+      ${kv('Frame code', `<span class="code">${esc(r.frame_code || '—')}</span>`, r.frame_code || '')}
+      ${kv('BOM code', `<span class="code">${esc(r.bom_code || '—')}</span>`, r.bom_code || '')}
+      ${kv('BOM label', esc(r.bom_label || '—'))}
+      ${kv('BOM year', esc(r.bom_year || '—'))}
+      ${kv('Match', esc(r.match_confidence) + (r.match_basis ? ' · ' + esc(r.match_basis) : ''))}
+      ${kv('Year source', esc(r.year_source || '—'))}
+      ${kv('Page source', r.link_source === 'wayback' ? 'Wayback archive' + (r.archive_timestamp ? ' · ' + esc(r.archive_timestamp) : '') : (r.page_source === 'wayback' ? 'Wayback metadata · live page' : 'Live Canyon page'))}
+      ${kv('Notes', esc(r.notes || '—'))}
+      ${kv('Price', r.price_min ? '€' + esc(formatPrice(r.price_min)) : '—')}
+      ${kv('SKUs', esc(r.skus || '—'))}
+      ${kv('First seen', esc(r.first_seen || '—'))}
+    </dl>
+    <div class="section-title">Links</div>
+    <div class="row">
+      ${r.product_url ? `<a class="btn" href="${escAttr(r.product_url)}" target="_blank" rel="noopener">${r.link_source === 'wayback' ? 'Archived page' : 'Product page'}</a>` : ''}
+      ${r.archive_url && r.archive_url !== r.product_url ? `<a class="btn" href="${escAttr(r.archive_url)}" target="_blank" rel="noopener">Wayback snapshot</a>` : ''}
+      ${r.link_source === 'wayback' && r.live_url && r.live_url !== r.product_url ? `<a class="btn" href="${escAttr(r.live_url)}" target="_blank" rel="noopener">Original URL</a>` : ''}
+      ${r.bom_url ? `<a class="btn accent" href="${escAttr(r.bom_url)}" target="_blank" rel="noopener">BOM PDF</a>` : '<span class="badge b-wait">no published BOM</span>'}
+    </div>`;
+  showModal(html);
+}
+function openBom(index) {
+  const r = DATA.boms[index]; if (!r) return;
+  const prods = productsForBom(r);
+  const html = `
+    <h2>${esc(labelText(r) || firstCode(r))}</h2>
+    <div class="badges">${badge(r.asset_year || '—', 'b-neutral')}${badge(familyText(r) || '—', 'b-neutral')}${statusBadge(truthy(r.published ?? true))}${r.post2024 ? badge('post-2024', 'b-new') : ''}</div>
+    <dl class="kv">
+      ${kv('Model codes', esc(codeText(r) || '—'))}
+      ${kv('Labels', esc((r.labels || []).join(' / ') || '—'))}
+      ${kv('Categories', esc((r.categories || []).join(' / ') || '—'))}
+      ${kv('Catalog years', esc((r.catalog_years || []).join(', ') || '—'))}
+      ${kv('Filename', esc(r.filename || '—'))}
+      ${kv('Stable URL', esc(r.url_stable || r.url || '—'), r.url_stable || r.url || '')}
+      ${kv('Local file', r.local_file ? esc(r.local_file) : '—')}
+    </dl>
+    <div class="section-title">Links</div>
+    <div class="row">
+      ${r.url_stable || r.url ? `<a class="btn accent" href="${escAttr(r.url_stable || r.url)}" target="_blank" rel="noopener">Open PDF</a>` : ''}
+      ${r.local_file ? `<a class="btn" href="${escAttr(r.local_file)}" target="_blank" rel="noopener">Local copy</a>` : ''}
+    </div>
+    <div class="section-title">Product pages (${prods.length})</div>
+    ${prods.length ? allProductChips(prods) : `<p class="subline">No scraped product page for this BOM. <a href="${escAttr(canyonSearchUrl((r.labels && r.labels[0]) || firstCode(r)))}" target="_blank" rel="noopener">Search Canyon</a>.</p>`}`;
+  showModal(html);
+}
+function openArchive(index) {
+  const r = DATA.archive[index]; if (!r) return;
+  const prods = productsForBom(r);
+  const html = `
+    <h2>${esc(labelText(r) || r.filename)}</h2>
+    <div class="badges">${badge(r.asset_year || '—', 'b-neutral')}${badge(familyText(r) || '—', 'b-neutral')}${badge(codeText(r) || 'no code', 'b-neutral')}</div>
+    <dl class="kv">
+      ${kv('Year', esc(r.asset_year || '—'))}
+      ${kv('Folder', esc(r.asset_family || '—'))}
+      ${kv('Filename', esc(r.filename || '—'))}
+      ${kv('Model codes', esc(codeText(r) || '—'))}
+      ${kv('Labels', esc((r.labels || []).join(' / ') || '—'))}
+      ${kv('Categories', esc((r.categories || []).join(' / ') || '—'))}
+      ${kv('Catalog years', esc((r.catalog_years || []).join(', ') || '—'))}
+      ${kv('Stable URL', esc(r.url_stable || r.url || '—'), r.url_stable || r.url || '')}
+    </dl>
+    <div class="section-title">Links</div>
+    <div class="row"><a class="btn accent" href="${escAttr(r.url_stable || r.url)}" target="_blank" rel="noopener">Open PDF</a></div>
+    <div class="section-title">Product pages (${prods.length})</div>
+    ${prods.length ? allProductChips(prods) : `<p class="subline">No scraped product page for this BOM. <a href="${escAttr(canyonSearchUrl((r.labels && r.labels[0]) || firstCode(r)))}" target="_blank" rel="noopener">Search Canyon</a>.</p>`}`;
+  showModal(html);
+}
+function showModal(html) {
+  $('#modal-content').innerHTML = html;
+  $('#modal').classList.add('open');
+  $('#modal').setAttribute('aria-hidden', 'false');
+}
+function closeModal() {
+  $('#modal').classList.remove('open');
+  $('#modal').setAttribute('aria-hidden', 'true');
+}
+
+/* ---------- populate filters ---------- */
+function populate() {
+  const families = uniq((DATA.products || []).map(p => p.family));
+  const years = uniq((DATA.products || []).map(p => p.model_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
+  const bFamilies = uniq((DATA.boms || []).map(b => b.asset_family));
+  const bYears = uniq((DATA.boms || []).map(b => b.asset_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
+  const aFamilies = uniq((DATA.archive || []).map(b => b.asset_family));
+  const aYears = uniq((DATA.archive || []).map(b => b.asset_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
+  $('#p-family').insertAdjacentHTML('beforeend', families.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#p-year').insertAdjacentHTML('beforeend', years.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#b-family').insertAdjacentHTML('beforeend', bFamilies.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#b-year').insertAdjacentHTML('beforeend', bYears.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#a-family').insertAdjacentHTML('beforeend', aFamilies.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#a-year').insertAdjacentHTML('beforeend', aYears.map(x => `<option>${esc(x)}</option>`).join(''));
+}
+
+/* ---------- events ---------- */
+function wire() {
+  $$('#tabs .tab').forEach(btn => btn.addEventListener('click', () => {
+    $$('#tabs .tab').forEach(b => b.classList.toggle('active', b === btn));
+    $$('.panel').forEach(p => p.classList.toggle('active', p.id === 'panel-' + btn.dataset.tab));
+    location.hash = btn.dataset.tab;
+  }));
+
+  // products
+  $('#p-search').addEventListener('input', e => { pState.search = e.target.value; renderProducts(); });
+  $('#p-family').addEventListener('change', e => { pState.family = e.target.value; renderProducts(); });
+  $('#p-year').addEventListener('change', e => { pState.year = e.target.value; renderProducts(); });
+  $('#p-confidence').addEventListener('change', e => { pState.confidence = e.target.value; renderProducts(); });
+  $('#p-status').addEventListener('change', e => { pState.status = e.target.value; renderProducts(); });
+  $('#p-source').addEventListener('change', e => { pState.source = e.target.value; renderProducts(); });
+  $('#p-export').addEventListener('click', () => downloadCsv('gravity_products_filtered.csv', sortRows(filteredProducts(), pState.sort, pState.dir),
+    ['product_id','product_name','product_url','family','material','electric','model_year','frame_code','bom_code','bom_label','bom_year','bom_url','bom_published','match_confidence','match_basis','notes']));
+
+  // boms
+  $('#b-search').addEventListener('input', e => { bState.search = e.target.value; renderBoms(); });
+  $('#b-family').addEventListener('change', e => { bState.family = e.target.value; renderBoms(); });
+  $('#b-year').addEventListener('change', e => { bState.year = e.target.value; renderBoms(); });
+  $('#b-status').addEventListener('change', e => { bState.status = e.target.value; renderBoms(); });
+  $('#b-export').addEventListener('click', () => downloadCsv('gravity_boms_filtered.csv', sortRows(filteredBoms(), bState.sort, bState.dir),
+    ['model_codes','labels','asset_year','asset_family','catalog_years','categories','filename','url_stable','published']));
+
+  // archive
+  $('#a-search').addEventListener('input', e => { aState.search = e.target.value; aState.page = 1; renderArchive(); });
+  $('#a-year').addEventListener('change', e => { aState.year = e.target.value; aState.page = 1; renderArchive(); });
+  $('#a-family').addEventListener('change', e => { aState.family = e.target.value; aState.page = 1; renderArchive(); });
+  $('#a-gravity').addEventListener('change', e => { aState.gravity = e.target.checked; aState.page = 1; renderArchive(); });
+  $('#a-prev').addEventListener('click', () => { aState.page--; renderArchive(); });
+  $('#a-next').addEventListener('click', () => { aState.page++; renderArchive(); });
+  $('#a-export').addEventListener('click', () => downloadCsv('canyon_archive_filtered.csv', sortRows(filteredArchive(), aState.sort, aState.dir),
+    ['asset_year','asset_family','model_codes','labels','categories','catalog_years','filename','url_stable']));
+
+  // sort headers
+  const wireSort = (tableSel, st, render) => {
+    $$(tableSel + ' th[data-sort]').forEach(th => th.addEventListener('click', () => {
+      if (st.sort === th.dataset.sort) st.dir *= -1; else { st.sort = th.dataset.sort; st.dir = 1; }
+      render();
+    }));
+  };
+  wireSort('#p-table', pState, renderProducts);
+  wireSort('#b-table', bState, renderBoms);
+  wireSort('#a-table', aState, renderArchive);
+
+  // row clicks
+  $('#p-table').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const tr = e.target.closest('tr[data-type="product"]'); if (tr) openProduct(+tr.dataset.index);
+  });
+  $('#b-table').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const tr = e.target.closest('tr[data-type="bom"]'); if (tr) openBom(+tr.dataset.index);
+  });
+  $('#a-table').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const tr = e.target.closest('tr[data-type="archive"]'); if (tr) openArchive(+tr.dataset.index);
+  });
+
+  // modal close
+  $('#modal-close').addEventListener('click', closeModal);
+  $('#modal').addEventListener('click', e => { if (e.target === $('#modal')) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+    if (e.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) {
+      e.preventDefault();
+      const active = $('.panel.active'); const search = active && active.querySelector('input[type="search"]');
+      if (search) search.focus();
+    }
+  });
+
+  // copy buttons (delegated)
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-copy]');
+    if (b) { e.stopPropagation(); copyText(b.dataset.copy); }
+  });
+}
+
+/* ---------- init ---------- */
+renderStats();
+populate();
+wire();
+renderProducts();
+renderBoms();
+renderPost2024();
+renderArchive();
+const hash = location.hash.replace('#', '');
+if (['products','boms','post2024','archive'].includes(hash)) {
+  $$('#tabs .tab').find(b => b.dataset.tab === hash)?.click();
+}
+</script>
+</body>
+</html>

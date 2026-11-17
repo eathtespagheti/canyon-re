@@ -1,0 +1,34 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  image: python:3.12-alpine
+  script:
+    - python3 build_product_map.py
+    - python3 build_browser.py
+  artifacts:
+    paths:
+      - browser.html
+      - gravity_products.csv
+      - gravity_product_bom_map.csv
+      - gravity_boms_extended.json
+    expire_in: 1 week
+
+pages:
+  stage: deploy
+  image: alpine:3.20
+  needs:
+    - job: build
+      artifacts: true
+  script:
+    - mkdir -p public/pdfs
+    - cp browser.html public/index.html
+    - cp README.md M204.md gravity_products.csv gravity_product_bom_map.csv gravity_boms.csv gravity_boms_extended.json public/
+    - cp -r pdfs/post2024 public/pdfs/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

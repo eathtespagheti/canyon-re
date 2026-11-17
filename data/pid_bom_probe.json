@@ -1,0 +1,219 @@
+[
+  {
+    "pid": 4447,
+    "label": "Sender CFR CLLCTV 2027",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwd64ad008/explosiondrawings/explosiondrawing-M180-01.pdf",
+    "image_year": "2027",
+    "image_code": "M180"
+  },
+  {
+    "pid": 4448,
+    "label": "Sender CFR Underdog 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4377,
+    "label": "Spectral 5 2027",
+    "bom": null,
+    "image_year": "2027",
+    "image_code": "M178"
+  },
+  {
+    "pid": 4378,
+    "label": "Spectral 6 2027",
+    "bom": null,
+    "image_year": "2027",
+    "image_code": "M178"
+  },
+  {
+    "pid": 4379,
+    "label": "Spectral AL LTD 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4380,
+    "label": "Spectral CF 7 2027",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "image_year": "2027",
+    "image_code": "M179"
+  },
+  {
+    "pid": 4381,
+    "label": "Spectral CF 8 2027",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "image_year": "2027",
+    "image_code": "M179"
+  },
+  {
+    "pid": 4382,
+    "label": "Spectral CF 9 2027",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "image_year": "2027",
+    "image_code": "M179"
+  },
+  {
+    "pid": 4388,
+    "label": "Spectral:ON CF 9 AXS 2027",
+    "bom": null,
+    "image_year": "2027",
+    "image_code": "M204"
+  },
+  {
+    "pid": 4389,
+    "label": "Spectral:ON CF LTD 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4293,
+    "label": "Strive:ON CFR 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4294,
+    "label": "Strive:ON CF 9 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4295,
+    "label": "Strive:ON CF 8 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4321,
+    "label": "Torque AL 7 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4322,
+    "label": "Torque AL DH 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4323,
+    "label": "Torque AL 8 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4324,
+    "label": "Torque AL 9 2027",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 4027,
+    "label": "Torque:ON CF 8 2025",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3185,
+    "label": "Spectral 29 AL 6 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3aca50f3/explosiondrawings/explosiondrawing-M114-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3202,
+    "label": "Sender CFR Mullet Underdog 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3195,
+    "label": "Strive CFR 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe9c464ae/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3194,
+    "label": "Strive CFR Underdog 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe9c464ae/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3203,
+    "label": "Sender CFR 29 Underdog 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3204,
+    "label": "Sender CFR Mullet 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3205,
+    "label": "Sender CFR 29 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3206,
+    "label": "Sender CFR Mullet TLD 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3207,
+    "label": "Sender CFR 29 TLD 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 2985,
+    "label": "Torque 27.5 CF 7 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw18b7aced/explosiondrawings/explosiondrawing-M106-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 2989,
+    "label": "Torque 27.5 CF 9 2022",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3197,
+    "label": "Torque 27.5 AL 5 2022",
+    "bom": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw773c8f06/explosiondrawings/explosiondrawing-M113-01.pdf",
+    "image_year": null,
+    "image_code": null
+  },
+  {
+    "pid": 3199,
+    "label": "Torque 27.5 AL 6 2022",
+    "bom": null,
+    "image_year": null,
+    "image_code": null
+  }
+]

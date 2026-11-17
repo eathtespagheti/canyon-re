@@ -1,0 +1,2679 @@
+[
+  {
+    "id": "3428",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/strive-on-cfr-underdog/3428.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CFR Underdog",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1752041212/29467C64-AF14-44BD-98AEE19C8105E92A",
+    "product_group_id": "3428",
+    "skus": [
+      "50015164",
+      "50015165",
+      "50015166",
+      "50015167"
+    ],
+    "price_min": 3999.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw53a7afb3/explosiondrawings/explosiondrawing-M158-01.pdf",
+    "bom_code": "M158",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3429",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/strive-on-cfr/3429.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CFR",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1725370548/D57994C8-3F55-41D5-A3E73907FD8F74E4",
+    "product_group_id": "3429",
+    "skus": [
+      "50020713",
+      "50020714",
+      "50020715",
+      "50020716"
+    ],
+    "price_min": 4699.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw53a7afb3/explosiondrawings/explosiondrawing-M158-01.pdf",
+    "bom_code": "M158",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3640",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-8-cllctv/3640.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 8 CLLCTV",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw6c050efd/images/full/2024_FULL_/2024/2024_FULL_Spectral_CF-8-cllctv-29er_3640_M179_P03.png",
+    "product_group_id": "3640",
+    "skus": [
+      "50025630",
+      "50025631",
+      "50025632",
+      "50025633",
+      "50036780",
+      "50036781",
+      "50036782",
+      "50036783",
+      "50036784"
+    ],
+    "price_min": 2599.0,
+    "image_year": "2024",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3535",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-fly/spectral-onfly-cf-cllctv/3535.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ONfly CF CLLCTV",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733933290/4F25DCDB-A423-4108-837D20A6FFD7F2E7",
+    "product_group_id": "3535",
+    "skus": [
+      "50021714",
+      "50021715",
+      "50021716",
+      "50021717"
+    ],
+    "price_min": 4699.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3537",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-fly/spectral-onfly-cf-8/3537.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ONfly CF 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733937848/D62CE752-FF30-4E21-ABE526D252495532",
+    "product_group_id": "3537",
+    "skus": [
+      "50021729",
+      "50021730",
+      "50021731",
+      "50021732",
+      "50021734",
+      "50021735",
+      "50021736",
+      "50021737"
+    ],
+    "price_min": 2999.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3643",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-9/3643.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw8387c41d/images/3rd-variation-attribute-images/3643/full_2024_3643_spectral-cf-9-mullet_M179_P01_P5.png",
+    "product_group_id": "3643",
+    "skus": [
+      "50025648",
+      "50025649",
+      "50025650",
+      "50025651",
+      "50025652",
+      "50025653",
+      "50025654",
+      "50025655",
+      "50036785",
+      "50036786",
+      "50036787",
+      "50036788",
+      "50036789",
+      "50036790",
+      "50036791",
+      "50036792",
+      "50036793",
+      "50036794"
+    ],
+    "price_min": 3799.0,
+    "image_year": "2024",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3979",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-dh-cllctv/3979.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque DH CLLCTV",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1730998874/2025_FULL_torque_dh-cllctv_3979_M113_P10_ydhpy2",
+    "product_group_id": "3979",
+    "skus": [
+      "50031572",
+      "50031573",
+      "50031574",
+      "50031575"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2025",
+    "image_code": "M113",
+    "image_all_codes": [
+      "M113"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw773c8f06/explosiondrawings/explosiondrawing-M113-01.pdf",
+    "bom_code": "M113",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3651",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/3651.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Underdog",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwd0a5c993/images/full/2025_FULL_/2025/2025_FULL_sender_cfr-underdog_3651_M180_P02.png",
+    "product_group_id": "3651",
+    "skus": [
+      "50025604",
+      "50025692",
+      "50025693",
+      "50025706",
+      "50040839",
+      "50040840",
+      "50040841",
+      "50040838"
+    ],
+    "price_min": 4599.0,
+    "image_year": "2025",
+    "image_code": "M180",
+    "image_all_codes": [
+      "M180"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3655",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-team/3655.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Team",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwbf47e5d0/images/full/2025_FULL_/2025/2025_FULL_sender_cfr-team_3655_M180_P02.png",
+    "product_group_id": "3655",
+    "skus": [
+      "50030905",
+      "50030909",
+      "50030906",
+      "50030907",
+      "50040842",
+      "50040843",
+      "50040844",
+      "50040845"
+    ],
+    "price_min": 5499.0,
+    "image_year": "2025",
+    "image_code": "M180",
+    "image_all_codes": [
+      "M180"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwd64ad008/explosiondrawings/explosiondrawing-M180-01.pdf",
+    "bom_code": "M180",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3534",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-fly/spectral-onfly-cf-ltd/3534.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ONfly CF LTD",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733933538/AB5288D2-3252-4D75-93DE79BEDB0CBA67",
+    "product_group_id": "3534",
+    "skus": [
+      "50021709",
+      "50021710",
+      "50021711",
+      "50021712"
+    ],
+    "price_min": 5999.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3194",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/strive/cfr/strive-cfr-underdog/3194.html",
+    "seen": [
+      "2025-06",
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive CFR Underdog",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwbf2e535f/images/full/strive-cfr/2023/strive-cfr-underdog_3194_bk-sr_P5.png",
+    "product_group_id": "3194",
+    "skus": [
+      "50016224",
+      "50016225",
+      "50016226",
+      "50016227",
+      "50016228",
+      "50016229",
+      "50016230",
+      "50016231",
+      "50020829",
+      "50020830",
+      "50020831",
+      "50020832"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe9c464ae/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "bom_code": "M147",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3536",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-fly/spectral-onfly-cf-9/3536.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ONfly CF 9",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733937762/4BC0C4D2-BB2B-40AE-80B9ACB1C0052686",
+    "product_group_id": "3536",
+    "skus": [
+      "50021719",
+      "50021720",
+      "50021721",
+      "50021722",
+      "50021724",
+      "50021725",
+      "50021726",
+      "50021727"
+    ],
+    "price_min": 3499.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3978",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-6/3978.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 6",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1732539089/2025_FULL_torque_6_3978_M113_P09_imwokx",
+    "product_group_id": "3978",
+    "skus": [
+      "50031552",
+      "50031553",
+      "50031554",
+      "50031555",
+      "50031556",
+      "50031557",
+      "50031558",
+      "50031559"
+    ],
+    "price_min": 2599.0,
+    "image_year": "2025",
+    "image_code": "M113",
+    "image_all_codes": [
+      "M113"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3195",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/strive/cfr/strive-cfr/3195.html",
+    "seen": [
+      "2025-06",
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive CFR",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwffb1434c/images/full/full_2022_/2022/full_2022_strive-cfr_3195_bk-sr_P5.png",
+    "product_group_id": "3195",
+    "skus": [
+      "50016232",
+      "50016233",
+      "50016234",
+      "50016235",
+      "50016236",
+      "50016237",
+      "50016238",
+      "50016239"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe9c464ae/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "bom_code": "M147",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3770",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-ltd/3770.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF LTD",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw6761d368/images/3rd-variation-attribute-images/3770/full_2024_3770_spectral-cf-ltd-mullet_M179_P05_P5.png",
+    "product_group_id": "3770",
+    "skus": [
+      "50028775",
+      "50028776",
+      "50028777",
+      "50028778",
+      "50036795",
+      "50036796",
+      "50036797",
+      "50036798",
+      "50036799"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2024",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4011",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-5/4011.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 5",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1744007412/2025_FULL_spectral_5_4011_M178_P02_P5_29_l1jcqd",
+    "product_group_id": "4011",
+    "skus": [
+      "50031843",
+      "50031844",
+      "50031845",
+      "50031846",
+      "50031847",
+      "50031848",
+      "50031849",
+      "50031850",
+      "50031851",
+      "50031853",
+      "50031854",
+      "50031855",
+      "50031856",
+      "50031857",
+      "50031858",
+      "50031859",
+      "50031860",
+      "50031861"
+    ],
+    "price_min": 1999.0,
+    "image_year": "2025",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3637",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-7/3637.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc0b148fc/images/3rd-variation-attribute-images/3637/full_2024_3637_spectral-cf-7-mullet_M179_P01_P5.png",
+    "product_group_id": "3637",
+    "skus": [
+      "50025612",
+      "50025613",
+      "50025614",
+      "50025615",
+      "50025616",
+      "50025617",
+      "50025618",
+      "50025619",
+      "50036770",
+      "50036771",
+      "50036772",
+      "50036773",
+      "50036774",
+      "50036775",
+      "50036776",
+      "50036777",
+      "50036778",
+      "50036779"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2024",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4012",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-6/4012.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 6",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1744007414/2025_FULL_spectral_6_4012_M178_P02_P5_29_ntnev4",
+    "product_group_id": "4012",
+    "skus": [
+      "50031863",
+      "50031864",
+      "50031865",
+      "50031866",
+      "50031867",
+      "50031868",
+      "50031869",
+      "50031870",
+      "50031871",
+      "50031873",
+      "50031874",
+      "50031875",
+      "50031876",
+      "50031877",
+      "50031878",
+      "50031879",
+      "50031880",
+      "50031881"
+    ],
+    "price_min": 2499.0,
+    "image_year": "2025",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw9b8d95f9/explosiondrawings/explosiondrawing-M178-01.pdf",
+    "bom_code": "M178",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4013",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-cllctv/4013.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CLLCTV",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw673f2cd3/images/full/2025_FULL_/2025/2025_FULL_spectral_cllctv_4013_M178_P03_P5_29.png",
+    "product_group_id": "4013",
+    "skus": [
+      "50031883",
+      "50031884",
+      "50031885",
+      "50031886",
+      "50031887",
+      "50031888",
+      "50031889",
+      "50031890",
+      "50031891"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2025",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3977",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-5/3977.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw1028775f/images/full/2025_FULL_/2025/2025_FULL_torque_5_3977_M113_P09.png",
+    "product_group_id": "3977",
+    "skus": [
+      "50031544",
+      "50031545",
+      "50031546",
+      "50031547",
+      "50031548",
+      "50031549",
+      "50031550",
+      "50031551"
+    ],
+    "price_min": 1999.0,
+    "image_year": "2025",
+    "image_code": "M113",
+    "image_all_codes": [
+      "M113"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3377",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-cf-cllctv-fw/3377.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque CF CLLCTV FW",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw5cc0d235/images/full/3377_torqu/2024/3377_torque-cf-cllctv-fw_P07_P5.png",
+    "product_group_id": "3377",
+    "skus": [
+      "50030910",
+      "50030912",
+      "50030911",
+      "50030913"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2024",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3416",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/strive/cfr/strive-cfr/3416.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive CFR",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwe8d0a3d1/images/full/3416_striv/2023/3416_strive-cfr_P04_P5.png",
+    "product_group_id": "3416",
+    "skus": [
+      "50020717",
+      "50020718",
+      "50020719",
+      "50020720",
+      "50028724",
+      "50028725",
+      "50028726",
+      "50028727",
+      "50028728",
+      "50028729",
+      "50028730",
+      "50028731"
+    ],
+    "price_min": 3899.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwe9c464ae/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "bom_code": "M147",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3430",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/strive-on-cfr-ltd/3430.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CFR LTD",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1752040937/5E90D72B-9A6B-4E07-B1BAE63D2190445D",
+    "product_group_id": "3430",
+    "skus": [
+      "50020721",
+      "50020722",
+      "50020723",
+      "50020724"
+    ],
+    "price_min": 6999.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw53a7afb3/explosiondrawings/explosiondrawing-M158-01.pdf",
+    "bom_code": "M158",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3980",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-cf-8/3980.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque CF 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1730875470/2025_FULL_torque_cf-8_3980_M106_P01_nwpzax",
+    "product_group_id": "3980",
+    "skus": [
+      "50031564",
+      "50031565",
+      "50031566",
+      "50031567",
+      "50031568",
+      "50031569",
+      "50031570",
+      "50031571"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2025",
+    "image_code": "M106",
+    "image_all_codes": [
+      "M106"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3532",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-8/3532.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw7ea4a2a8/images/full/3532_spect/2024/3532_spectral-on-cf-8_M129_P16_P5.png",
+    "product_group_id": "3532",
+    "skus": [
+      "50021672",
+      "50021673",
+      "50021674",
+      "50021675",
+      "50021676",
+      "50021677",
+      "50021678",
+      "50021679"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2024",
+    "image_code": "M129",
+    "image_all_codes": [
+      "M129"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw460baf6d/explosiondrawings/explosiondrawing-M129-02.pdf",
+    "bom_code": "M129",
+    "bom_rev": "02"
+  },
+  {
+    "id": "3389",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-9/3389.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 9 AXS",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwcf73409f/images/full/full_2023_/2023/full_2023_3389_spectral-on-cf-9_P07_P5.png",
+    "product_group_id": "3389",
+    "skus": [
+      "50020536",
+      "50020537",
+      "50020538",
+      "50020539"
+    ],
+    "price_min": 4199.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw460baf6d/explosiondrawings/explosiondrawing-M129-02.pdf",
+    "bom_code": "M129",
+    "bom_rev": "02"
+  },
+  {
+    "id": "3386",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/cf/torque-on-cf-9/3386.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw2bcbc5d8/images/full/full_2023_/2023/full_2023_3386_torque-on-cf-9_P01_P5.png",
+    "product_group_id": "3386",
+    "skus": [
+      "50020500",
+      "50020501",
+      "50020502",
+      "50020503",
+      "50020504",
+      "50020505",
+      "50020506",
+      "50020507"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3530",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cfr/spectral-on-cfr/3530.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CFR",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1787646553/2024_FULL_spectral-on_cfr_3530_M091_P01_fsdzj8",
+    "product_group_id": "3530",
+    "skus": [
+      "50021646",
+      "50021647",
+      "50021648",
+      "50021649",
+      "50050954",
+      "50050955",
+      "50050958",
+      "50050959",
+      "50050960",
+      "50050953",
+      "50050956",
+      "50050957"
+    ],
+    "price_min": 4999.0,
+    "image_year": "2024",
+    "image_code": "M091",
+    "image_all_codes": [
+      "M091"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8b48c51c/explosiondrawings/explosiondrawing-M091-02.pdf",
+    "bom_code": "M091",
+    "bom_rev": "02"
+  },
+  {
+    "id": "3533",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-7/3533.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 7",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733932348/0A11AAC3-7732-49AC-99C06EC3C9680AF6",
+    "product_group_id": "3533",
+    "skus": [
+      "50021694",
+      "50021695",
+      "50021696",
+      "50021697",
+      "50021698",
+      "50021699",
+      "50021700",
+      "50021701",
+      "50028098",
+      "50028099",
+      "50028100",
+      "50028101"
+    ],
+    "price_min": 2999.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw460baf6d/explosiondrawings/explosiondrawing-M129-02.pdf",
+    "bom_code": "M129",
+    "bom_rev": "02"
+  },
+  {
+    "id": "3757",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/cf/torque-on-cf-7/3757.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON CF 7",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1733933932/AB33905C-1E33-4604-A273DB7D9837435A",
+    "product_group_id": "3757",
+    "skus": [
+      "50028220",
+      "50028221",
+      "50028222",
+      "50028223",
+      "50028224",
+      "50028225",
+      "50028226",
+      "50028227"
+    ],
+    "price_min": 3299.0,
+    "image_year": null,
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3387",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/cf/torque-on-cf-8/3387.html",
+    "seen": [
+      "2025-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw7d52a97d/images/full/full_2023_/2023/full_2023_3387_torque-on-cf-8_P01_P5.png",
+    "product_group_id": "3387",
+    "skus": [
+      "50020516",
+      "50020517",
+      "50020518",
+      "50020519",
+      "50020520",
+      "50020521",
+      "50020522",
+      "50020523"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw76e3b5ca/explosiondrawings/explosiondrawing-M124-01.pdf",
+    "bom_code": "M124",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3115",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-9/3115.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwa64fba28/images/full/full_2022_/2022/full_2022_spectral-on-cf-9_3115_bu-bu_P5.png",
+    "product_group_id": "3115",
+    "skus": [
+      "50015552",
+      "50015553",
+      "50015554",
+      "50015555",
+      "50015556",
+      "50015557",
+      "50015558",
+      "50015559"
+    ],
+    "price_min": 4199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw2828e730/explosiondrawings/explosiondrawing-M129-01.pdf",
+    "bom_code": "M129",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3192",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/mullet/spectral-mullet-cf-8-cllctv/3192.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral Mullet CF 8 CLLCTV",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw836bc739/images/full/full_2022_/2022/full_2022_spectral-cf-ltd_3192_gy_P5.png",
+    "product_group_id": "3192",
+    "skus": [
+      "50016216",
+      "50016217",
+      "50016218",
+      "50016219"
+    ],
+    "price_min": 3199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3116",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-8/3116.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw8671dc8e/images/full/full_2022_/2022/full_2022_spectral-on-cf-8_3116_bk-bk_P5.png",
+    "product_group_id": "3116",
+    "skus": [
+      "50015560",
+      "50015561",
+      "50015562",
+      "50015563",
+      "50015564",
+      "50015565",
+      "50015566",
+      "50015567"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw2828e730/explosiondrawings/explosiondrawing-M129-01.pdf",
+    "bom_code": "M129",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3179",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral-125/cf/spectral-125-cf-9/3179.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 125 CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw0711eea4/images/full/full_2022_/2022/full_2022_spectral-125-cf-9_3179_si_P5.png",
+    "product_group_id": "3179",
+    "skus": [
+      "50016340",
+      "50016341",
+      "50016342",
+      "50016343",
+      "50016344",
+      "50016345",
+      "50016346",
+      "50016347"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw38361a93/explosiondrawings/explosiondrawing-M144-01.pdf",
+    "bom_code": "M144",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3117",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-7/3117.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw2de3a281/images/full/full_2022_/2022/full_2022_spectral-on-cf-7_3117_vt_P5.png",
+    "product_group_id": "3117",
+    "skus": [
+      "50015568",
+      "50015569",
+      "50015570",
+      "50015571",
+      "50015572",
+      "50015573",
+      "50015574",
+      "50015575",
+      "50015576",
+      "50015577",
+      "50015578",
+      "50015579"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw2828e730/explosiondrawings/explosiondrawing-M129-01.pdf",
+    "bom_code": "M129",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3200",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-29/torque-29-al-6/3200.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 29 AL 6",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw47f86c96/images/full/full_2022_/2022/full_2022_torque-6_3200_sr_P5.png",
+    "product_group_id": "3200",
+    "skus": [
+      "50016262",
+      "50016263",
+      "50016264",
+      "50016265",
+      "50016266",
+      "50016267"
+    ],
+    "price_min": 3099.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3176",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral-125/al/spectral-125-al-6/3176.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 125 AL 6",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw7ca3ac4b/images/full/full_2022_/2022/full_2022_spectral-125-6_3176_rd_P5.png",
+    "product_group_id": "3176",
+    "skus": [
+      "50016316",
+      "50016317",
+      "50016318",
+      "50016319",
+      "50016320",
+      "50016321",
+      "50016322",
+      "50016323"
+    ],
+    "price_min": 2099.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw51e3e05a/explosiondrawings/explosiondrawing-M148-01.pdf",
+    "bom_code": "M148",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3185",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-29-al-6/3185.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 AL 6",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwd46ba14a/images/full/full_2022_/2022/full_2022_spectral-6_3185_or-or_P5.png",
+    "product_group_id": "3185",
+    "skus": [
+      "50016162",
+      "50016163",
+      "50016164",
+      "50016165",
+      "50016166",
+      "50016167"
+    ],
+    "price_min": 2499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3aca50f3/explosiondrawings/explosiondrawing-M114-01.pdf",
+    "bom_code": "M114",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3178",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral-125/cf/spectral-125-cf-8/3178.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 125 CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw8b38dcc3/images/full/full_2022_/2022/full_2022_spectral-125-cf-8_3178_rd_P5.png",
+    "product_group_id": "3178",
+    "skus": [
+      "50016332",
+      "50016333",
+      "50016334",
+      "50016335",
+      "50016336",
+      "50016337",
+      "50016338",
+      "50016339",
+      "50025532",
+      "50025533",
+      "50025534",
+      "50025535",
+      "50025536",
+      "50025537",
+      "50025538",
+      "50025539"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw38361a93/explosiondrawings/explosiondrawing-M144-01.pdf",
+    "bom_code": "M144",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3177",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral-125/cf/spectral-125-cf-7/3177.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 125 CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwb1e96dda/images/full/full_2022_/2022/full_2022_spectral-125-cf-7_3177_si_P5.png",
+    "product_group_id": "3177",
+    "skus": [
+      "50016324",
+      "50016325",
+      "50016326",
+      "50016327",
+      "50016328",
+      "50016329",
+      "50016330",
+      "50016331"
+    ],
+    "price_min": 2499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw38361a93/explosiondrawings/explosiondrawing-M144-01.pdf",
+    "bom_code": "M144",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3183",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-29-al-5/3183.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 AL 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc4cf4749/images/full/full_2022_/2022/full_2022_spectral-5_3183_bk-sr_P5.png",
+    "product_group_id": "3183",
+    "skus": [
+      "50020383",
+      "50020384",
+      "50020385",
+      "50016141",
+      "50016142",
+      "50016143",
+      "50016144",
+      "50016145",
+      "50016146"
+    ],
+    "price_min": 1999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3aca50f3/explosiondrawings/explosiondrawing-M114-01.pdf",
+    "bom_code": "M114",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2986",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-29/torque-29-cf-7/2986.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 29 CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw05228077/images/full/full_2022_/2022/full_2022_torque-cf-7_2986_GY-Bk_P5.png",
+    "product_group_id": "2986",
+    "skus": [
+      "50015258",
+      "50015259",
+      "50015260",
+      "50015261",
+      "50015262",
+      "50015263"
+    ],
+    "price_min": 3199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw18b7aced/explosiondrawings/explosiondrawing-M106-01.pdf",
+    "bom_code": "M106",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2987",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-mullet-cf-8/2987.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque Mullet CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw98fed16f/images/full/full_2022_/2022/full_2022_torque-cf-8_2987_GY_BK_P5.png",
+    "product_group_id": "2987",
+    "skus": [
+      "50020449",
+      "50020453",
+      "50015281",
+      "50015282",
+      "50015283",
+      "50015264",
+      "50015265",
+      "50015266"
+    ],
+    "price_min": 3299.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw18b7aced/explosiondrawings/explosiondrawing-M106-01.pdf",
+    "bom_code": "M106",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3188",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/27-5/spectral-27.5-cf-8/3188.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 27.5 CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw24c8695a/images/full/full_2022_/2022/full_2022_spectral-cf-8_3188_bk-bk_P5.png",
+    "product_group_id": "3188",
+    "skus": [
+      "50016184",
+      "50016185",
+      "50016186",
+      "50016187",
+      "50016188",
+      "50016189",
+      "50016190",
+      "50016191"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2990",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-29/torque-29-cf-9/2990.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 29 CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwadf8a167/images/full/full_2022_/2022/full_2022_torque-cf-9_2990_gy-bk_P5.png",
+    "product_group_id": "2990",
+    "skus": [
+      "50015273",
+      "50015274",
+      "50015275",
+      "50015290",
+      "50015291",
+      "50015292"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3203",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-29-underdog/3203.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR 29 Underdog",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw7ad0d276/images/full/full_2022_/2022/full_2022_sender-cfr-underdog_3203_bk-sr_P5.png",
+    "product_group_id": "3203",
+    "skus": [
+      "50016279",
+      "50016280",
+      "50016281",
+      "50016282",
+      "50016277",
+      "50016278"
+    ],
+    "price_min": 4199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3204",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-mullet/3204.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Mullet",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw44dab254/images/full/full_2022_/2022/full_2022_sender-cfr_3204_bk-sr_P5.png",
+    "product_group_id": "3204",
+    "skus": [
+      "50016283",
+      "50016284",
+      "50016285",
+      "50016286",
+      "50016287",
+      "50016288"
+    ],
+    "price_min": 5999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3184",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/27-5/spectral-27.5-al-6/3184.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 27.5 AL 6",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc9f5a2cb/images/full/full_2022_/2022/full_2022_spectral-6_3184_bk-sr_P5.png",
+    "product_group_id": "3184",
+    "skus": [
+      "50016160",
+      "50016161",
+      "50016147",
+      "50016148",
+      "50016149",
+      "50016150",
+      "50016151",
+      "50016152"
+    ],
+    "price_min": 2499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3aca50f3/explosiondrawings/explosiondrawing-M114-01.pdf",
+    "bom_code": "M114",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3206",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-mullet-tld/3206.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Mullet TLD",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw83eefe7c/images/full/full_2022_/2022/full_2022_sender-cfr-tld_3206_gr-wh_P5.png",
+    "product_group_id": "3206",
+    "skus": [
+      "50016295",
+      "50016296",
+      "50016297"
+    ],
+    "price_min": 4599.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3207",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-29-tld/3207.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR 29 TLD",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwa9b8ae08/images/full/full_2022_/2022/full_2022_sender-cfr-tld_3207_gr-wh_P5.png",
+    "product_group_id": "3207",
+    "skus": [
+      "50016298",
+      "50016299",
+      "50016300"
+    ],
+    "price_min": 5799.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3190",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/27-5/spectral-27.5-cf-9/3190.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 27.5 CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw94bdb242/images/full/full_2022_/2022/full_2022_spectral-cf-9_3190_bk-bk_P5.png",
+    "product_group_id": "3190",
+    "skus": [
+      "50016204",
+      "50016205",
+      "50016206",
+      "50016207",
+      "50016200",
+      "50016201",
+      "50016202",
+      "50016203"
+    ],
+    "price_min": 3799.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2251",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr/cfr/2251.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwb5b29ea2/images/full/full_2021_/2021/full_2021_sender-cfr_2251_tm_P5.png",
+    "product_group_id": "2251",
+    "skus": [
+      "50005577",
+      "50005578",
+      "50005579",
+      "50005580",
+      "50005581",
+      "50005582",
+      "50005583",
+      "50005584"
+    ],
+    "price_min": 4999.0,
+    "image_year": "2021",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2989",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-27.5/torque-27.5-cf-9/2989.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 27.5 CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw8268d708/images/full/full_2022_/2022/full_2022_torque-cf-9_2989_Color-1_P5.png",
+    "product_group_id": "2989",
+    "skus": [
+      "50015270",
+      "50015271",
+      "50015272",
+      "50015287",
+      "50015288",
+      "50015289"
+    ],
+    "price_min": 4499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3198",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-29/torque-29-al-5/3198.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 29 AL 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dweb76aefc/images/full/full_2022_/2022/full_2022_torque-5_3198_GY-BK_P5.png",
+    "product_group_id": "3198",
+    "skus": [
+      "50016250",
+      "50016251",
+      "50016252",
+      "50016253",
+      "50016254",
+      "50016255"
+    ],
+    "price_min": 2299.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw773c8f06/explosiondrawings/explosiondrawing-M113-01.pdf",
+    "bom_code": "M113",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2985",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-27.5/torque-27.5-cf-7/2985.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 27.5 CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw833be1bc/images/full/full_2022_/2022/full_2022_torque-cf-7_2985_GY-BK_P5.png",
+    "product_group_id": "2985",
+    "skus": [
+      "50015252",
+      "50015253",
+      "50015254",
+      "50015255",
+      "50015256",
+      "50015257"
+    ],
+    "price_min": 3399.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw18b7aced/explosiondrawings/explosiondrawing-M106-01.pdf",
+    "bom_code": "M106",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3175",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral-125/al/spectral-125-al-5/3175.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 125 AL 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw5eb1f62b/images/full/full_2022_/2022/full_2022_spectral-125-5_3175_rd_P5.png",
+    "product_group_id": "3175",
+    "skus": [
+      "50016308",
+      "50016309",
+      "50016310",
+      "50016311",
+      "50016312",
+      "50016313",
+      "50016314",
+      "50016315"
+    ],
+    "price_min": 1599.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw51e3e05a/explosiondrawings/explosiondrawing-M148-01.pdf",
+    "bom_code": "M148",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3181",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/youth-kids/spectral-young-hero/spectral-young-hero/3181.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral Young Hero",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc17ab77a/images/full/full_2022_/2022/full_2022_spectral-yh_3181_wh-wh_P5.png",
+    "product_group_id": "3181",
+    "skus": [
+      "50016132"
+    ],
+    "price_min": 1599.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw23fb8e41/explosiondrawings/explosiondrawing-M050-01.pdf",
+    "bom_code": "M050",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3112",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/torque-on-7/3112.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw9af57cdd/images/full/full_2022_/2022/full_2022_torque-on-7_3112_BK_P5.png",
+    "product_group_id": "3112",
+    "skus": [
+      "50015540",
+      "50015541",
+      "50015542",
+      "50015543"
+    ],
+    "price_min": 3899.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3113",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cfr/spectral-on-cfr-ltd/3113.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CFR LTD",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw312765aa/images/full/full_2022_/2022/full_2022_spectral-on-cfr-ltd_3113_bk-sr_P5.png",
+    "product_group_id": "3113",
+    "skus": [
+      "50015544",
+      "50016876",
+      "50016877",
+      "50016878"
+    ],
+    "price_min": 5199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3193",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cfr/spectral-29-cfr/3193.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 CFR",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc70b8a84/images/full/full_2022_/2022/full_2022_spectral-cfr_3193_bk_P5.png",
+    "product_group_id": "3193",
+    "skus": [
+      "50016220",
+      "50016221",
+      "50016222",
+      "50016223"
+    ],
+    "price_min": 5499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw7c47f5fe/explosiondrawings/explosiondrawing-M122-01.pdf",
+    "bom_code": "M122",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2700",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/torque-on-8/2700.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwbb26dfeb/images/full/full_2021_/2021/full_2021_torque-on-8_2700_gn_P5.png",
+    "product_group_id": "2700",
+    "skus": [
+      "50010350",
+      "50010351",
+      "50010352",
+      "50010353",
+      "50010354",
+      "50010355",
+      "50010356",
+      "50010357"
+    ],
+    "price_min": 4499.0,
+    "image_year": "2021",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw846cd27b/explosiondrawings/explosiondrawing-M085-01.pdf",
+    "bom_code": "M085",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2679",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-ltd-axs-29/2679.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral LTD AXS 29",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwa0dadfde/images/full/full_2022_/2022/full_2022_spectral-cf-29-axs-ltd_2679_bk-wh_P5.png",
+    "product_group_id": "2679",
+    "skus": [
+      "50010156",
+      "50010157",
+      "50010158"
+    ],
+    "price_min": 7199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3191",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-29-cf-9/3191.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 CF 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwe29e5f7f/images/full/full_2022_/2022/full_2022_spectral-cf-9_3191_bk-bk_P5.png",
+    "product_group_id": "3191",
+    "skus": [
+      "50016208",
+      "50016209",
+      "50016210",
+      "50016211",
+      "50016212",
+      "50016213",
+      "50016214",
+      "50016215"
+    ],
+    "price_min": 4499.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3187",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-29-cf-7/3187.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw44857f89/images/full/full_2022_/2022/full_2022_spectral-cf-7_3187_bk-bk_P5.png",
+    "product_group_id": "3187",
+    "skus": [
+      "50016176",
+      "50016177",
+      "50016178",
+      "50016179",
+      "50016180",
+      "50016181",
+      "50016182",
+      "50016183"
+    ],
+    "price_min": 2799.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2701",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/torque-on-9/2701.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON 9",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwb2e05296/images/full/full_2021_/2021/full_2021_torque-on-9_2701_bk-wh_P5.png",
+    "product_group_id": "2701",
+    "skus": [
+      "50010358",
+      "50010359",
+      "50010360",
+      "50010361"
+    ],
+    "price_min": 5699.0,
+    "image_year": "2021",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw846cd27b/explosiondrawings/explosiondrawing-M085-01.pdf",
+    "bom_code": "M085",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3199",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-27.5/torque-27.5-al-6/3199.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 27.5 AL 6",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwbcce2fec/images/full/full_2022_/2022/full_2022_3199_torque-6_P04_P5.png",
+    "product_group_id": "3199",
+    "skus": [
+      "50016256",
+      "50016257",
+      "50016258",
+      "50016259",
+      "50016260",
+      "50016261",
+      "50020481",
+      "50020482",
+      "50020483"
+    ],
+    "price_min": 2699.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "3114",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cfr/spectral-on-cfr/3114.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CFR",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw88c1a8b1/images/full/full_2022_/2022/full_2022_spectral-on-cfr_3114_bk-bk_P5.png",
+    "product_group_id": "3114",
+    "skus": [
+      "50015548",
+      "50016025",
+      "50016026",
+      "50016027"
+    ],
+    "price_min": 4999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw8b48c51c/explosiondrawings/explosiondrawing-M091-02.pdf",
+    "bom_code": "M091",
+    "bom_rev": "02"
+  },
+  {
+    "id": "3186",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/27-5/spectral-27.5-cf-7/3186.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 27.5 CF 7",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwc9e91428/images/full/full_2022_/2022/full_2022_spectral-cf-7_3186_bk-bk_P5.png",
+    "product_group_id": "3186",
+    "skus": [
+      "50016168",
+      "50016169",
+      "50016170",
+      "50016171",
+      "50016172",
+      "50016173",
+      "50016174",
+      "50016175"
+    ],
+    "price_min": 2799.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3202",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-mullet-underdog/3202.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Mullet Underdog",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw20a2bf75/images/full/full_2022_/2022/full_2022_sender-cfr-underdog_3202_gy-og_P5.png",
+    "product_group_id": "3202",
+    "skus": [
+      "50016271",
+      "50016272",
+      "50016273",
+      "50016274",
+      "50016275",
+      "50016276"
+    ],
+    "price_min": 4199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3197",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-27.5/torque-27.5-al-5/3197.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque 27.5 AL 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw588faa99/images/full/full_2022_/2022/full_2022_torque-5_3197_GY-BK_P5.png",
+    "product_group_id": "3197",
+    "skus": [
+      "50016244",
+      "50016245",
+      "50016246",
+      "50016247",
+      "50016248",
+      "50016249"
+    ],
+    "price_min": 2599.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw773c8f06/explosiondrawings/explosiondrawing-M113-01.pdf",
+    "bom_code": "M113",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3182",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/27-5/spectral-27.5-al-5/3182.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 27.5 AL 5",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw4b836aa6/images/full/full_2022_/2022/full_2022_spectral-5_3182_or-or_P5.png",
+    "product_group_id": "3182",
+    "skus": [
+      "50020380",
+      "50020381",
+      "50020382",
+      "50016133",
+      "50016134",
+      "50016135",
+      "50016136",
+      "50016137",
+      "50016138",
+      "50016139",
+      "50016140"
+    ],
+    "price_min": 2199.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3aca50f3/explosiondrawings/explosiondrawing-M114-01.pdf",
+    "bom_code": "M114",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4295",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/cf/strive-on-cf-8/4295.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CF 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1776850350/2027_FULL_strive-on_cf-8_4295_M188_P01_nq1gr7",
+    "product_group_id": "4295",
+    "skus": [
+      "50040079",
+      "50040080",
+      "50040081",
+      "50040082"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2027",
+    "image_code": "M188",
+    "image_all_codes": [
+      "M188"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4294",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/cf/strive-on-cf-9/4294.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CF 9",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1776850353/2027_FULL_strive-on_cf-9_4294_M188_P01_vzxvqv",
+    "product_group_id": "4294",
+    "skus": [
+      "50041065",
+      "50042710",
+      "50042711",
+      "50042712"
+    ],
+    "price_min": 4999.0,
+    "image_year": "2027",
+    "image_code": "M188",
+    "image_all_codes": [
+      "M188"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "3189",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/29/spectral-29-cf-8/3189.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 29 CF 8",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw9cd674eb/images/full/full_2022_/2022/full_2022_spectral-cf-8_3189_gr-gr_P5.png",
+    "product_group_id": "3189",
+    "skus": [
+      "50016192",
+      "50016193",
+      "50016194",
+      "50016195",
+      "50016196",
+      "50016197",
+      "50016198",
+      "50016199"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw3cf4b5f0/explosiondrawings/explosiondrawing-M121-01.pdf",
+    "bom_code": "M121",
+    "bom_rev": "01"
+  },
+  {
+    "id": "3205",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-29/3205.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR 29",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw67459cde/images/full/full_2022_/2022/full_2022_sender-cfr_3205_gy-og_P5.png",
+    "product_group_id": "3205",
+    "skus": [
+      "50016289",
+      "50016290",
+      "50016291",
+      "50016292",
+      "50016293",
+      "50016294"
+    ],
+    "price_min": 5999.0,
+    "image_year": "2022",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwcc3445f2/explosiondrawings/explosiondrawing-M086-01.pdf",
+    "bom_code": "M086",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4447",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-cllctv/4447.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR CLLCTV",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1781859006/2027_FULL_sender_cfr-cllctv_4447_M180_P03_npjsql",
+    "product_group_id": "4447",
+    "skus": [
+      "50043783",
+      "50043784",
+      "50043785",
+      "50043786"
+    ],
+    "price_min": 6499.0,
+    "image_year": "2027",
+    "image_code": "M180",
+    "image_all_codes": [
+      "M180"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dwd64ad008/explosiondrawings/explosiondrawing-M180-01.pdf",
+    "bom_code": "M180",
+    "bom_rev": "01"
+  },
+  {
+    "id": "2991",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/torque-mullet/torque-mullet-cf-fabio-wibmer/2991.html",
+    "seen": [
+      "2022-06"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque CF CLLCTV FW",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw68876db2/images/full/full_2023_/2022/full_2023_2991-1_torque-cf-cllctv-fw_wh-gy_P5.png",
+    "product_group_id": "2991",
+    "skus": [
+      "50020437",
+      "50020438",
+      "50020439",
+      "50020440",
+      "50016268",
+      "50016269",
+      "50016270"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2023",
+    "image_code": null,
+    "image_all_codes": [],
+    "bom_url": null
+  },
+  {
+    "id": "4382",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-9/4382.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 9",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785238177/2027_FULL_spectral_cf-9_4382_M179_P10_P5_29_p9lfqb",
+    "product_group_id": "4382",
+    "skus": [
+      "50043252",
+      "50043253",
+      "50043254",
+      "50043255",
+      "50043256",
+      "50043257",
+      "50043258",
+      "50043259",
+      "50043260"
+    ],
+    "price_min": 4999.0,
+    "image_year": "2027",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4322",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/al/torque-al-dh/4322.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque AL DH",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785310946/2027_FULL_torque_al-dh_4322_M185_P01_apaccs",
+    "product_group_id": "4322",
+    "skus": [
+      "50041036",
+      "50041037",
+      "50041038",
+      "50041039"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2027",
+    "image_code": "M185",
+    "image_all_codes": [
+      "M185"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4381",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-8/4381.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785842736/2027_FULL_spectral_cf-8_4381_M179_P09_P5_29_wvhnb1",
+    "product_group_id": "4381",
+    "skus": [
+      "50043234",
+      "50043235",
+      "50043236",
+      "50043237",
+      "50043238",
+      "50043239",
+      "50043243",
+      "50043244",
+      "50043245",
+      "50043246",
+      "50043247",
+      "50043248",
+      "50043249",
+      "50043250",
+      "50043251",
+      "50043240",
+      "50043241",
+      "50043242"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2027",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4448",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/downhill-bikes/sender/sender-cfr-underdog/4448.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Sender CFR Underdog",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1783324097/2027_FULL_sender_cfr-underdog_4448_M180_P01_hzb3cj",
+    "product_group_id": "4448",
+    "skus": [
+      "50043775",
+      "50043776",
+      "50043777",
+      "50043778"
+    ],
+    "price_min": 4499.0,
+    "image_year": "2027",
+    "image_code": "M180",
+    "image_all_codes": [
+      "M180"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4377",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-5/4377.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 5",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785483078/2027_FULL_spectral_5_4377_M178_P04_P5_29_dp7oub",
+    "product_group_id": "4377",
+    "skus": [
+      "50043180",
+      "50043181",
+      "50043182",
+      "50043183",
+      "50043184",
+      "50043185",
+      "50043186",
+      "50043187",
+      "50043188",
+      "50043189",
+      "50043190",
+      "50043191",
+      "50043192",
+      "50043193",
+      "50043194",
+      "50043195",
+      "50043196",
+      "50043197"
+    ],
+    "price_min": 2299.0,
+    "image_year": "2027",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4379",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-al-ltd/4379.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral AL LTD",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785739142/2027_FULL_spectral_ltd_4379_M178_P06_P5_29_oqlzwr",
+    "product_group_id": "4379",
+    "skus": [
+      "50043261",
+      "50043262",
+      "50043263",
+      "50043264",
+      "50043265",
+      "50043266",
+      "50043267",
+      "50043268",
+      "50043269"
+    ],
+    "price_min": 3499.0,
+    "image_year": "2027",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4388",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-9-axs/4388.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF 9 AXS",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1793195760/2027_FULL_spectral-on_cf-9_4388_M204_P03_ls8vav",
+    "product_group_id": "4388",
+    "skus": [
+      "50043316",
+      "50043317",
+      "50043318",
+      "50043319"
+    ],
+    "price_min": 6999.0,
+    "image_year": "2027",
+    "image_code": "M204",
+    "image_all_codes": [
+      "M204"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4321",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/al/torque-al-7/4321.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque AL 7",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1779784350/2027_FULL_torque_al-7_4321_M185_P01_yexis7",
+    "product_group_id": "4321",
+    "skus": [
+      "50041079",
+      "50041080",
+      "50041081",
+      "50041075",
+      "50041076",
+      "50041077",
+      "50041078",
+      "50041082",
+      "50041083",
+      "50041084"
+    ],
+    "price_min": 2499.0,
+    "image_year": "2027",
+    "image_code": "M185",
+    "image_all_codes": [
+      "M185"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4027",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/torque-on/torque-on-cf/torque-on-cf-8/4027.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque:ON CF 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1771848315/2025_FULL_torque-on_cf-8_4027_M124_P08_cmm4li",
+    "product_group_id": "4027",
+    "skus": [
+      "50033586",
+      "50033587",
+      "50033588",
+      "50033589",
+      "50033590",
+      "50033591",
+      "50033592",
+      "50033593"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2025",
+    "image_code": "M124",
+    "image_all_codes": [
+      "M124"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4324",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/al/torque-al-9/4324.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque AL 9",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1779784351/2027_FULL_torque_al-9_4324_M185_P03_mmt3vz",
+    "product_group_id": "4324",
+    "skus": [
+      "50041060",
+      "50041061",
+      "50041062",
+      "50041063",
+      "50041064"
+    ],
+    "price_min": 3999.0,
+    "image_year": "2027",
+    "image_code": "M185",
+    "image_all_codes": [
+      "M185"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4293",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/mountain-ebikes-striveon/cfr/strive-on-cfr/4293.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Strive:ON CFR",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1776233751/2027_FULL_strive-on_cfr_4293_M188_P03_ki8num",
+    "product_group_id": "4293",
+    "skus": [
+      "50040073",
+      "50040074",
+      "50040345",
+      "50040344"
+    ],
+    "price_min": 7499.0,
+    "image_year": "2027",
+    "image_code": "M188",
+    "image_all_codes": [
+      "M188"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4389",
+    "url": "https://www.canyon.com/en-it/electric-bikes/electric-mountain-bikes/spectral-on/spectral-on-cf/spectral-on-cf-ltd/4389.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral:ON CF LTD",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1793184322/2027_FULL_spectral-on_cf-ltd_4389_M204_P03_n8dklk",
+    "product_group_id": "4389",
+    "skus": [
+      "50053468",
+      "50053469",
+      "50053470",
+      "50053471"
+    ],
+    "price_min": 7999.0,
+    "image_year": "2027",
+    "image_code": "M204",
+    "image_all_codes": [
+      "M204"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4380",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/cf/spectral-cf-7/4380.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral CF 7",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb",
+    "product_group_id": "4380",
+    "skus": [
+      "50043216",
+      "50043217",
+      "50043218",
+      "50043219",
+      "50043220",
+      "50043221",
+      "50043222",
+      "50043223",
+      "50043224",
+      "50043225",
+      "50043226",
+      "50043227",
+      "50043228",
+      "50043229",
+      "50043230",
+      "50043231",
+      "50043232",
+      "50043233"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2027",
+    "image_code": "M179",
+    "image_all_codes": [
+      "M179"
+    ],
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/dw41d64674/explosiondrawings/explosiondrawing-M179-01.pdf",
+    "bom_code": "M179",
+    "bom_rev": "01"
+  },
+  {
+    "id": "4378",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/trail-bikes/spectral/al/spectral-6/4378.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Spectral 6",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1785846236/2027_FULL_spectral_6_4378_M178_P05_P5_29_twvsxr",
+    "product_group_id": "4378",
+    "skus": [
+      "50043203",
+      "50043204",
+      "50043205",
+      "50043206",
+      "50043207",
+      "50043208",
+      "50043209",
+      "50043210",
+      "50043211",
+      "50043212",
+      "50043213",
+      "50043214",
+      "50043198",
+      "50043199",
+      "50043200",
+      "50043201",
+      "50043202",
+      "50043215"
+    ],
+    "price_min": 2699.0,
+    "image_year": "2027",
+    "image_code": "M178",
+    "image_all_codes": [
+      "M178"
+    ],
+    "bom_url": null
+  },
+  {
+    "id": "4323",
+    "url": "https://www.canyon.com/en-it/mountain-bikes/enduro-bikes/torque/al/torque-al-8/4323.html",
+    "seen": [
+      "live"
+    ],
+    "page_status": 200,
+    "page_source": "live",
+    "name": "Torque AL 8",
+    "image": "https://dma.canyon.com/image/upload/w_945,h_495,c_fit/f_auto/q_auto/v1779784351/2027_FULL_torque_al-8_4323_M185_P02_pqziz8",
+    "product_group_id": "4323",
+    "skus": [
+      "50041045",
+      "50041046",
+      "50041047",
+      "50041048",
+      "50041049",
+      "50041050",
+      "50041051",
+      "50041052",
+      "50041053",
+      "50041054"
+    ],
+    "price_min": 2999.0,
+    "image_year": "2027",
+    "image_code": "M185",
+    "image_all_codes": [
+      "M185"
+    ],
+    "bom_url": null
+  }
+]
