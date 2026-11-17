@@ -334,7 +334,7 @@ def main() -> int:
                     "",
                 )
             )
-            bom_url = rec.get("bom_url") or root_url(bom_code, rev)
+            bom_url = rec.get("bom_url") or bom.get("url_stable") or bom.get("url") or root_url(bom_code, rev)
             published = bool(bom.get("published", True))
             if not published:
                 bom_url = ""

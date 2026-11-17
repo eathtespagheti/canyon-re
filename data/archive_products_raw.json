@@ -1862,5 +1862,93 @@
     "seen": [
       "wayback"
     ]
+  },
+  {
+    "id": "legacy-spectral-cf-9-0-sl",
+    "name": "Spectral CF 9.0 SL",
+    "title": "CF SL 9.0 Bike: SPECTRAL | CANYON US",
+    "url": "https://www.canyon.com/en-us/mtb/spectral/2017/spectral-cf-9-0-sl",
+    "product_url": "https://web.archive.org/web/20180126222930/https://www.canyon.com/en-us/mtb/spectral/2017/spectral-cf-9-0-sl",
+    "live_url": "https://www.canyon.com/en-us/mtb/spectral/2017/spectral-cf-9-0-sl",
+    "archive_url": "https://web.archive.org/web/20180126222930/https://www.canyon.com/en-us/mtb/spectral/2017/spectral-cf-9-0-sl",
+    "page_source": "wayback",
+    "archive_timestamp": "20180126222930",
+    "image": "",
+    "image_year": "2017",
+    "image_code": null,
+    "bom_code": "M33",
+    "bom_rev": "01",
+    "skus": [],
+    "price_min": null,
+    "seen": [
+      "wayback"
+    ],
+    "legacy": true
+  },
+  {
+    "id": "legacy-spectral-al-6-0",
+    "name": "Spectral AL 6.0",
+    "title": "Spectral AL 6.0 Trail Mountain Bike | Canyon Bicycles US",
+    "url": "https://www.canyon.com/en-us/mtb/spectral/2018/spectral-al-6-0",
+    "product_url": "https://web.archive.org/web/20190117032249/https://www.canyon.com/en-us/mtb/spectral/2018/spectral-al-6-0",
+    "live_url": "https://www.canyon.com/en-us/mtb/spectral/2018/spectral-al-6-0",
+    "archive_url": "https://web.archive.org/web/20190117032249/https://www.canyon.com/en-us/mtb/spectral/2018/spectral-al-6-0",
+    "page_source": "wayback",
+    "archive_timestamp": "20190117032249",
+    "image": "",
+    "image_year": "2018",
+    "image_code": null,
+    "bom_code": "M17",
+    "bom_rev": "01",
+    "skus": [],
+    "price_min": null,
+    "seen": [
+      "wayback"
+    ],
+    "legacy": true
+  },
+  {
+    "id": "legacy-strive-al-6-0-race",
+    "name": "Strive AL 6.0 Race",
+    "title": "CANYON | STRIVE: Hammer any course with confidence and efficiency on the Strive AL",
+    "url": "https://www.canyon.com/en-gb/mtb/strive/2017/strive-al-6-0-race.html",
+    "product_url": "https://web.archive.org/web/20170814114937/https://www.canyon.com/en-gb/mtb/strive/2017/strive-al-6-0-race.html",
+    "live_url": "https://www.canyon.com/en-gb/mtb/strive/2017/strive-al-6-0-race.html",
+    "archive_url": "https://web.archive.org/web/20170814114937/https://www.canyon.com/en-gb/mtb/strive/2017/strive-al-6-0-race.html",
+    "page_source": "wayback",
+    "archive_timestamp": "20170814114937",
+    "image": "",
+    "image_year": "2017",
+    "image_code": null,
+    "bom_code": "M024",
+    "bom_rev": "01",
+    "skus": [],
+    "price_min": null,
+    "seen": [
+      "wayback"
+    ],
+    "legacy": true
+  },
+  {
+    "id": "legacy-strive-cf-8-0-race",
+    "name": "Strive CF 8.0 Race",
+    "title": "CANYON | STRIVE: Fancy a DH bike that will not be a drag climbing? Get a Strive!",
+    "url": "https://www.canyon.com/en-gb/mtb/strive/2017/strive-cf-8-0-race.html",
+    "product_url": "https://web.archive.org/web/20170814140832/https://www.canyon.com/en-gb/mtb/strive/2017/strive-cf-8-0-race.html",
+    "live_url": "https://www.canyon.com/en-gb/mtb/strive/2017/strive-cf-8-0-race.html",
+    "archive_url": "https://web.archive.org/web/20170814140832/https://www.canyon.com/en-gb/mtb/strive/2017/strive-cf-8-0-race.html",
+    "page_source": "wayback",
+    "archive_timestamp": "20170814140832",
+    "image": "",
+    "image_year": "2017",
+    "image_code": null,
+    "bom_code": "M027",
+    "bom_rev": "01",
+    "skus": [],
+    "price_min": null,
+    "seen": [
+      "wayback"
+    ],
+    "legacy": true
   }
 ]
