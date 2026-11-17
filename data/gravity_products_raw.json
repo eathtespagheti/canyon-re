@@ -2675,5 +2675,26 @@
       "M185"
     ],
     "bom_url": null
+  },
+  {
+    "id": "3196",
+    "name": "Strive CFR TLD",
+    "title": "Strive CFR TLD",
+    "url": "https://www.canyon.com/en-us/archive/strive-cfr-tld/3196.html",
+    "product_url": "https://www.canyon.com/en-us/archive/strive-cfr-tld/3196.html",
+    "live_url": "https://www.canyon.com/en-us/archive/strive-cfr-tld/3196.html",
+    "page_source": "live",
+    "image": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dw3de4c3fd/images/full/full_2022_/2022/full_2022_strive-cfr-tld_3196_P03_P5_v2.png",
+    "image_year": "2022",
+    "image_code": null,
+    "bom_code": "M147",
+    "bom_rev": "01",
+    "bom_path": "explosiondrawings/explosiondrawing-M147-01.pdf",
+    "bom_url": "https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/explosiondrawing-M147-01.pdf",
+    "skus": [],
+    "price_min": null,
+    "seen": [
+      "live"
+    ]
   }
 ]
