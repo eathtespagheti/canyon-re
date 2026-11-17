@@ -1,5 +1,7 @@
 # Canyon BOM / exploded-drawing archive — reverse engineering notes
 
+**Live browser:** <https://canyon-re-f385e1.gitlab.io/>
+
 Scope: Canyon gravity MTBs — **Spectral, Strive, Torque, Sender** (including
 `:ON` e-MTB variants).  Everything here is built from public Canyon pages and
 public static PDFs.
