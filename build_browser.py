@@ -21,8 +21,12 @@ def read_csv(path: Path) -> list[dict]:
 
 
 def main() -> int:
-    products = read_csv(ROOT / "gravity_products.csv")
-    boms = json.loads((ROOT / "gravity_boms_extended.json").read_text(encoding="utf-8"))
+    all_products = ROOT / "all_products.csv"
+    all_boms = ROOT / "all_boms_extended.json"
+    products = read_csv(all_products if all_products.exists() else ROOT / "gravity_products.csv")
+    boms = json.loads(
+        (all_boms if all_boms.exists() else ROOT / "gravity_boms_extended.json").read_text(encoding="utf-8")
+    )
     archive = json.loads((ROOT / "boms.json").read_text(encoding="utf-8"))
 
     data = {
