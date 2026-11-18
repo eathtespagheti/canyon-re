@@ -126,7 +126,7 @@
   <div class="hero-inner">
     <div class="eyebrow">Canyon · reverse-engineered archive</div>
     <h1>Canyon BOM Explorer</h1>
-    <p class="sub">Browse product pages, frame codes and exploded drawings across all Canyon families — road, MTB, gravel, trekking and e-bikes. Use <b>Gravity only</b> for Spectral, Strive, Torque and Sender.</p>
+    <p class="sub">Browse product pages, frame codes and exploded drawings across all Canyon families. Filter by category: <b>Gravity, XC, CX, Road, Gravel, Trail, E-MTB</b> and more.</p>
     <div class="stats" id="stats"></div>
   </div>
 </header>
@@ -148,7 +148,7 @@
       <select id="p-discipline"><option value="">All disciplines</option></select>
       <select id="p-family"><option value="">All families</option></select>
       <select id="p-year"><option value="">All years</option></select>
-      <label class="btn" style="display:flex;align-items:center;gap:7px;cursor:pointer"><input id="p-gravity" type="checkbox" style="accent-color:var(--accent)"> Gravity only</label>
+      <select id="p-category"><option value="">All categories</option></select>
       <select id="p-confidence">
         <option value="">All confidence</option>
         <option value="exact">exact</option>
@@ -194,7 +194,7 @@
       <input id="b-search" type="search" placeholder="Search code, name, family, category…" autocomplete="off">
       <select id="b-family"><option value="">All folders</option></select>
       <select id="b-year"><option value="">All years</option></select>
-      <label class="btn" style="display:flex;align-items:center;gap:7px;cursor:pointer"><input id="b-gravity" type="checkbox" style="accent-color:var(--accent)"> Gravity only</label>
+      <select id="b-category"><option value="">All categories</option></select>
       <select id="b-status">
         <option value="">All status</option>
         <option value="published">published</option>
@@ -209,6 +209,7 @@
           <th data-sort="code">Code <span class="arrow"></span></th>
           <th data-sort="label">Name / label <span class="arrow"></span></th>
           <th data-sort="asset_year">Year <span class="arrow"></span></th>
+          <th data-sort="category">Category <span class="arrow"></span></th>
           <th class="hide-sm" data-sort="asset_family">Folder <span class="arrow"></span></th>
           <th class="hide-sm" data-sort="catalog_years">Catalog years <span class="arrow"></span></th>
           <th data-sort="published">Status <span class="arrow"></span></th>
@@ -232,7 +233,7 @@
       <input id="a-search" type="search" placeholder="Search year, family, code, filename…" autocomplete="off">
       <select id="a-year"><option value="">All years</option></select>
       <select id="a-family"><option value="">All folders</option></select>
-      <label class="btn" style="display:flex;align-items:center;gap:7px;cursor:pointer"><input id="a-gravity" type="checkbox" style="accent-color:var(--accent)"> Gravity only</label>
+      <select id="a-category"><option value="">All categories</option></select>
       <button class="btn" id="a-export">Export CSV</button>
       <span class="count" id="a-count"></span>
     </div>
@@ -240,6 +241,7 @@
       <table id="a-table">
         <thead><tr>
           <th data-sort="asset_year">Year <span class="arrow"></span></th>
+          <th data-sort="category">Category <span class="arrow"></span></th>
           <th data-sort="asset_family">Folder <span class="arrow"></span></th>
           <th data-sort="codes">Model codes <span class="arrow"></span></th>
           <th data-sort="label">Name / label <span class="arrow"></span></th>
@@ -268,7 +270,7 @@
 <div class="toast" id="toast"></div>
 
 <footer class="footer">
-  <div>Data generated <span id="generated"></span> · <a href="README.md">README</a> · <a href="M204.md">M204 notes</a> · <a href="all_products.csv">all_products.csv</a> · <a href="all_product_bom_map.csv">product/BOM map</a> · <a href="gravity_products.csv">gravity subset</a></div>
+  <div>Data generated <span id="generated"></span> · <a href="README.md">README</a> · <a href="M204.md">M204 notes</a> · <a href="all_products.csv">all_products.csv</a> · <a href="all_product_bom_map.csv">product/BOM map</a></div>
   <div style="margin-top:6px">Public Canyon static PDFs + product metadata. Verify inferred mappings against the frame code on the bike before ordering parts.</div>
 </footer>
 
@@ -381,11 +383,11 @@ function renderStats() {
   const exact = products.filter(p => p.match_confidence === 'exact').length;
   const inferred = products.filter(p => p.match_confidence === 'inferred').length;
   const pending = products.filter(p => !truthy(p.bom_published)).length;
-  const gravityCount = products.filter(p => truthy(p.gravity)).length;
   const archived = products.filter(p => p.page_source === 'wayback').length;
+  const categories = new Set(products.map(p => p.category).filter(Boolean)).size;
   $('#stats').innerHTML = [
     [products.length, 'bike products'],
-    [gravityCount, 'gravity'],
+    [categories, 'categories'],
     [(DATA.boms || []).length, 'BOMs'],
     [(DATA.archive || []).length, 'archive PDFs'],
     [exact, 'exact mappings'],
@@ -396,15 +398,15 @@ function renderStats() {
 }
 
 /* ---------- products ---------- */
-const pState = { search: '', discipline: '', family: '', year: '', gravityOnly: false, confidence: '', status: '', source: '', sort: 'product_name', dir: 1 };
+const pState = { search: '', discipline: '', category: '', family: '', year: '', confidence: '', status: '', source: '', sort: 'product_name', dir: 1 };
 function filteredProducts() {
   const q = pState.search.trim().toLowerCase();
   return (DATA.products || []).filter(r => {
     if (q && !searchBlob(r).includes(q)) return false;
     if (pState.discipline && r.discipline !== pState.discipline) return false;
+    if (pState.category && r.category !== pState.category) return false;
     if (pState.family && r.family !== pState.family) return false;
     if (pState.year && String(r.model_year) !== pState.year) return false;
-    if (pState.gravityOnly && !truthy(r.gravity)) return false;
     if (pState.confidence && r.match_confidence !== pState.confidence) return false;
     if (pState.status === 'published' && !truthy(r.bom_published)) return false;
     if (pState.status === 'pending' && truthy(r.bom_published)) return false;
@@ -419,7 +421,7 @@ function renderProducts() {
     <tr data-type="product" data-index="${DATA.products.indexOf(r)}">
       <td><div class="name">${r.product_url ? `<a href="${escAttr(r.product_url)}" target="_blank" rel="noopener">${esc(r.product_name)}</a>` : esc(r.product_name)}${r.link_source === 'wayback' ? ' ' + badge('archive-only', 'b-wait') : (r.page_source === 'wayback' ? ' ' + badge('legacy', 'b-neutral') : '')}</div><div class="subline">ID ${esc(r.product_id)}${r.price_min ? ' · €' + esc(formatPrice(r.price_min)) : ''}</div></td>
       <td>${esc(r.model_year || '—')}</td>
-      <td><div>${esc(r.family || '—')}${truthy(r.electric) ? ' <span class="badge b-new">e</span>' : ''}</div><div class="subline">${esc(r.discipline || '')}</div></td>
+      <td><div>${esc(r.family || '—')}${truthy(r.electric) ? ' <span class="badge b-new">e</span>' : ''}</div><div class="subline">${esc(r.discipline || '')}${r.category ? ' · ' + esc(r.category) : ''}</div></td>
       <td class="hide-sm">${esc(r.material || '—')}</td>
       <td><span class="code">${esc(r.frame_code || '—')}</span></td>
       <td><span class="code">${esc(r.bom_code || '—')}</span><div class="subline">${esc(r.bom_label || '')}</div></td>
@@ -435,15 +437,15 @@ function renderProducts() {
   updateArrows('#p-table', pState);
 }
 
-/* ---------- gravity BOMs ---------- */
-const bState = { search: '', family: '', year: '', gravityOnly: false, status: '', sort: 'code', dir: 1 };
+/* ---------- BOMs ---------- */
+const bState = { search: '', category: '', family: '', year: '', status: '', sort: 'code', dir: 1 };
 function filteredBoms() {
   const q = bState.search.trim().toLowerCase();
   return (DATA.boms || []).filter(r => {
     if (q && !searchBlob(r).includes(q)) return false;
     if (bState.family && r.asset_family !== bState.family) return false;
     if (bState.year && String(r.asset_year) !== bState.year) return false;
-    if (bState.gravityOnly && !truthy(r.gravity)) return false;
+    if (bState.category && r.category !== bState.category) return false;
     if (bState.status === 'published' && !truthy(r.published ?? true)) return false;
     if (bState.status === 'pending' && truthy(r.published ?? true)) return false;
     return true;
@@ -457,6 +459,7 @@ function renderBoms() {
       <td><span class="code">${esc(firstCode(r) || '—')}</span>${r.post2024 ? ' <span class="badge b-new">new</span>' : ''}</td>
       <td><div class="name">${esc(labelText(r))}</div><div class="subline">${esc(r.filename || '')}</div></td>
       <td>${esc(r.asset_year || '—')}</td>
+      <td>${esc(r.category || '—')}</td>
       <td class="hide-sm">${esc(familyText(r) || '—')}</td>
       <td class="hide-sm">${esc((r.catalog_years || []).join(', ') || '—')}</td>
       <td>${statusBadge(truthy(r.published ?? true))}</td>
@@ -505,22 +508,14 @@ function renderPost2024() {
 }
 
 /* ---------- full archive ---------- */
-const aState = { search: '', year: '', family: '', gravity: false, sort: 'asset_year', dir: -1, page: 1, perPage: 100 };
-const GRAVITY_FOLDERS = new Set(['spectral','spectral_on','strive','strive_on','torque','torque_al','torque_on','sender']);
-function isGravityArchive(r) {
-  const labels = (r.labels || []).join(' ');
-  const labelHit = /spectral|strive|torque|sender/i.test(labels);
-  if (r.asset_family === 'nerve' || r.asset_family === 'neuron_spectral') return labelHit;
-  if (GRAVITY_FOLDERS.has(r.asset_family)) return true;
-  return labelHit || /spectral|strive|torque|sender/i.test((r.categories || []).join(' '));
-}
+const aState = { search: '', year: '', family: '', category: '', sort: 'asset_year', dir: -1, page: 1, perPage: 100 };
 function filteredArchive() {
   const q = aState.search.trim().toLowerCase();
   return (DATA.archive || []).filter(r => {
     if (q && !searchBlob(r).includes(q)) return false;
     if (aState.year && String(r.asset_year) !== aState.year) return false;
     if (aState.family && r.asset_family !== aState.family) return false;
-    if (aState.gravity && !isGravityArchive(r)) return false;
+    if (aState.category && r.category !== aState.category) return false;
     return true;
   });
 }
@@ -534,6 +529,7 @@ function renderArchive() {
   tbody.innerHTML = rows.map(r => `
     <tr data-type="archive" data-index="${DATA.archive.indexOf(r)}">
       <td>${esc(r.asset_year || '—')}</td>
+      <td>${esc(r.category || '—')}</td>
       <td>${esc(familyText(r))}</td>
       <td><span class="code">${esc(codeText(r) || '—')}</span></td>
       <td><div class="name">${esc(labelText(r))}</div><div class="subline">${esc(r.filename || '')}</div></td>
@@ -569,7 +565,8 @@ function openProduct(index) {
     <dl class="kv">
       ${kv('Product ID', esc(r.product_id))}
       ${kv('Family', esc(r.family) + (r.material ? ' · ' + esc(r.material) : ''))}
-      ${kv('Discipline', esc(r.discipline || '—') + (truthy(r.gravity) ? ' · gravity' : ''))}
+      ${kv('Discipline', esc(r.discipline || '—'))}
+      ${kv('Category', esc(r.category || '—'))}
       ${kv('Frame code', `<span class="code">${esc(r.frame_code || '—')}</span>`, r.frame_code || '')}
       ${kv('BOM code', `<span class="code">${esc(r.bom_code || '—')}</span>`, r.bom_code || '')}
       ${kv('BOM label', esc(r.bom_label || '—'))}
@@ -599,6 +596,7 @@ function openBom(index) {
     <div class="badges">${badge(r.asset_year || '—', 'b-neutral')}${badge(familyText(r) || '—', 'b-neutral')}${statusBadge(truthy(r.published ?? true))}${r.post2024 ? badge('post-2024', 'b-new') : ''}</div>
     <dl class="kv">
       ${kv('Model codes', esc(codeText(r) || '—'))}
+      ${kv('Category', esc(r.category || '—'))}
       ${kv('Labels', esc((r.labels || []).join(' / ') || '—'))}
       ${kv('Categories', esc((r.categories || []).join(' / ') || '—'))}
       ${kv('Catalog years', esc((r.catalog_years || []).join(', ') || '—'))}
@@ -623,6 +621,7 @@ function openArchive(index) {
     <div class="badges">${badge(r.asset_year || '—', 'b-neutral')}${badge(familyText(r) || '—', 'b-neutral')}${badge(codeText(r) || 'no code', 'b-neutral')}</div>
     <dl class="kv">
       ${kv('Year', esc(r.asset_year || '—'))}
+      ${kv('Category', esc(r.category || '—'))}
       ${kv('Folder', esc(r.asset_family || '—'))}
       ${kv('Filename', esc(r.filename || '—'))}
       ${kv('Model codes', esc(codeText(r) || '—'))}
@@ -651,16 +650,22 @@ function closeModal() {
 function populate() {
   const families = uniq((DATA.products || []).map(p => p.family));
   const disciplines = uniq((DATA.products || []).map(p => p.discipline));
+  const categories = uniq((DATA.products || []).map(p => p.category));
+  const bCategories = uniq((DATA.boms || []).map(b => b.category));
+  const aCategories = uniq((DATA.archive || []).map(b => b.category));
   const years = uniq((DATA.products || []).map(p => p.model_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
   const bFamilies = uniq((DATA.boms || []).map(b => b.asset_family));
   const bYears = uniq((DATA.boms || []).map(b => b.asset_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
   const aFamilies = uniq((DATA.archive || []).map(b => b.asset_family));
   const aYears = uniq((DATA.archive || []).map(b => b.asset_year)).sort((a,b) => b.localeCompare(a, undefined, {numeric:true}));
   $('#p-discipline').insertAdjacentHTML('beforeend', disciplines.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#p-category').insertAdjacentHTML('beforeend', categories.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#p-family').insertAdjacentHTML('beforeend', families.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#p-year').insertAdjacentHTML('beforeend', years.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#b-category').insertAdjacentHTML('beforeend', bCategories.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#b-family').insertAdjacentHTML('beforeend', bFamilies.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#b-year').insertAdjacentHTML('beforeend', bYears.map(x => `<option>${esc(x)}</option>`).join(''));
+  $('#a-category').insertAdjacentHTML('beforeend', aCategories.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#a-family').insertAdjacentHTML('beforeend', aFamilies.map(x => `<option>${esc(x)}</option>`).join(''));
   $('#a-year').insertAdjacentHTML('beforeend', aYears.map(x => `<option>${esc(x)}</option>`).join(''));
 }
@@ -678,31 +683,31 @@ function wire() {
   $('#p-discipline').addEventListener('change', e => { pState.discipline = e.target.value; renderProducts(); });
   $('#p-family').addEventListener('change', e => { pState.family = e.target.value; renderProducts(); });
   $('#p-year').addEventListener('change', e => { pState.year = e.target.value; renderProducts(); });
-  $('#p-gravity').addEventListener('change', e => { pState.gravityOnly = e.target.checked; renderProducts(); });
+  $('#p-category').addEventListener('change', e => { pState.category = e.target.value; renderProducts(); });
   $('#p-confidence').addEventListener('change', e => { pState.confidence = e.target.value; renderProducts(); });
   $('#p-status').addEventListener('change', e => { pState.status = e.target.value; renderProducts(); });
   $('#p-source').addEventListener('change', e => { pState.source = e.target.value; renderProducts(); });
   $('#p-export').addEventListener('click', () => downloadCsv('canyon_products_filtered.csv', sortRows(filteredProducts(), pState.sort, pState.dir),
-    ['product_id','product_name','product_url','family','family_base','discipline','material','electric','gravity','model_year','frame_code','bom_code','bom_label','bom_year','bom_url','bom_published','match_confidence','match_basis','notes']));
+    ['product_id','product_name','product_url','family','family_base','discipline','category','material','electric','model_year','frame_code','bom_code','bom_label','bom_year','bom_url','bom_published','match_confidence','match_basis','notes']));
 
   // boms
   $('#b-search').addEventListener('input', e => { bState.search = e.target.value; renderBoms(); });
   $('#b-family').addEventListener('change', e => { bState.family = e.target.value; renderBoms(); });
   $('#b-year').addEventListener('change', e => { bState.year = e.target.value; renderBoms(); });
-  $('#b-gravity').addEventListener('change', e => { bState.gravityOnly = e.target.checked; renderBoms(); });
+  $('#b-category').addEventListener('change', e => { bState.category = e.target.value; renderBoms(); });
   $('#b-status').addEventListener('change', e => { bState.status = e.target.value; renderBoms(); });
   $('#b-export').addEventListener('click', () => downloadCsv('canyon_boms_filtered.csv', sortRows(filteredBoms(), bState.sort, bState.dir),
-    ['model_codes','labels','asset_year','asset_family','catalog_years','categories','filename','url_stable','published','gravity']));
+    ['model_codes','labels','asset_year','asset_family','catalog_years','categories','filename','url_stable','published','category']));
 
   // archive
   $('#a-search').addEventListener('input', e => { aState.search = e.target.value; aState.page = 1; renderArchive(); });
   $('#a-year').addEventListener('change', e => { aState.year = e.target.value; aState.page = 1; renderArchive(); });
   $('#a-family').addEventListener('change', e => { aState.family = e.target.value; aState.page = 1; renderArchive(); });
-  $('#a-gravity').addEventListener('change', e => { aState.gravity = e.target.checked; aState.page = 1; renderArchive(); });
+  $('#a-category').addEventListener('change', e => { aState.category = e.target.value; aState.page = 1; renderArchive(); });
   $('#a-prev').addEventListener('click', () => { aState.page--; renderArchive(); });
   $('#a-next').addEventListener('click', () => { aState.page++; renderArchive(); });
   $('#a-export').addEventListener('click', () => downloadCsv('canyon_archive_filtered.csv', sortRows(filteredArchive(), aState.sort, aState.dir),
-    ['asset_year','asset_family','model_codes','labels','categories','catalog_years','filename','url_stable']));
+    ['asset_year','asset_family','category','model_codes','labels','categories','catalog_years','filename','url_stable']));
 
   // sort headers
   const wireSort = (tableSel, st, render) => {

@@ -3,8 +3,9 @@
 **Live browser:** <https://canyon-re-f385e1.gitlab.io/>
 
 Scope: **all Canyon bike families** — road, MTB, gravel, trekking, urban and
-e-bikes — with a **Gravity only** view for Spectral, Strive, Torque and Sender.
-Everything here is built from public Canyon pages and public static PDFs.
+e-bikes — browsable through a generic category picker (Gravity, XC, CX, Road,
+Gravel, Trail, E-MTB, E-Road, E-Gravel, E-Trekking, Urban, …). Everything here
+is built from public Canyon pages and public static PDFs.
 
 ## Browse the data
 
@@ -18,19 +19,18 @@ open browser.html          # macOS
 
 Tabs:
 
-- **Products** — 217 bike/tier pages (133 live + 84 recovered from Wayback),
-  across every family and searchable/filterable by discipline, family, year,
-  confidence, BOM status and source.  Use **Gravity only** to restrict to
-  Spectral/Strive/Torque/Sender.  Recovered rows carry a **legacy** badge but
-  link directly to the still-live Canyon page (Canyon redirects many to
-  `/archive/`); the Wayback snapshot is a secondary link.
-- **BOMs** — all 483 entries: the 479 archive PDFs plus the four post-2024
-  root-level BOMs.  A **Products** column links directly to every mapped
+- **Products** — bike/tier pages across every family, searchable/filterable by
+  discipline, **category**, family, year, confidence, BOM status and source.
+  Recovered rows carry a **legacy** badge but link directly to the still-live
+  Canyon page (Canyon redirects many to `/archive/`); the Wayback snapshot is a
+  secondary link.
+- **BOMs** — all archive entries plus the post-2024 root-level BOMs, with a
+  **category** picker.  A **Products** column links directly to every mapped
   product page; older/unscraped BOMs fall back to Canyon search.
 - **Post-2024 / M204** — cards for M178, M180, M185, M188 and the pending M204,
   with product links, local PDFs and the watcher command.
-- **Full archive** — all 479 PDFs from 2009–2024, with a gravity-only filter,
-  product links where mapped, and pagination.
+- **Full archive** — all archive PDFs from 2009–2024, with a **category**
+  filter, product links where mapped, and pagination.
 
 Regenerate it after refreshing the data:
 
@@ -42,17 +42,16 @@ python3 build_browser.py
 
 | Thing | Result |
 |---|---|
-| Old year-based archive | 16 pages (2009–2024), **479 unique PDFs**, **83 gravity PDFs** |
+| Old year-based archive | 16 pages (2009–2024), **479 unique PDFs** across all families |
 | Old PDF URL | `/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/{year}/{family}/{code}-{rev}_BOM_{name}.pdf` |
 | New PDF URL | `/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/explosiondrawing-{code}-{rev}.pdf` |
 | Version hash `dwXXXXXXXX` | **Optional** — the hash-free URL resolves directly |
 | Post-2024 lookup | `Utils-SearchBike?pidFallback=true&template=explosionDrawings&serialNumber={serial or product-id}` |
 | New BOMs found | **M178** Spectral AL, **M180** Sender CFR, **M185** Torque AL, **M188** Strive:ON |
 | M204 | 2027 Spectral:ON CF / CF LTD — **not published yet** (pre-orders 4 Dec 2026) |
-| Product pages mapped | **217 bike/tier pages** (2017–2027): 133 live + 84 archived; 190 exact, 26 inferred, 1 unknown |
-| Disciplines covered | MTB 134, Road 47, Gravel 22, Trekking 10, Urban 4 |
-| BOMs with direct product links | **85 / 483** overall · **57 / 87** for gravity |
-| Gravity subset | 102 products, 87 BOMs, 57 with direct product links |
+| Product pages mapped | **884 bike/tier pages** (2017–2027): 693 live + 191 archived; 535 exact, 323 inferred, 26 unmatched |
+| Categories | Gravity, XC, CX, Trail, Road, Gravel, E-Gravity, E-XC, E-Trail, E-Road, E-Gravel, E-Trekking, E-Urban, Dirt Jump, Urban, Trekking, Fat |
+| BOMs with direct product links | **199 / 483** |
 
 ## How the archive is structured
 
@@ -137,7 +136,7 @@ The new drawings use the flat root path:
 https://www.canyon.com/on/demandware.static/-/Library-Sites-canyon-shared/default/explosiondrawings/explosiondrawing-{code}-{rev}.pdf
 ```
 
-### New gravity frames found this way
+### New frames found this way
 
 | Code | Bike | PDF | Local file |
 |---|---|---|---|
@@ -217,23 +216,21 @@ to query.
 
 ## Product-page mapping
 
-`all_products.csv` contains **217** bike/tier pages (2017–2027) across all
+`all_products.csv` contains **884** bike/tier pages (2017–2027) across all
 families:
 
-- **133 live pages** (current site / 2022+ sitemap snapshots)
-- **84 Wayback pages** (2017–2021 gravity plus early Spectral:ON)
+- **693 live pages** (current site / 2022+ sitemap snapshots)
+- **191 Wayback pages** (archived product pages and early e-MTB models)
 
 Each row has:
 
-- product ID, name, URL, model year, family, discipline, material, electric flag
-- whether it is a gravity model
+- product ID, name, URL, model year, family, discipline, category, material, electric flag
 - page source (`live` or `wayback`), archive timestamp, original URL
 - frame code from the image path or the serial/PID endpoint
 - matched BOM code, label, year, PDF URL, publication status
 - confidence: `exact` / `inferred` / `none`
 
 `all_product_bom_map.csv` is the same mapping flattened for joins.
-`gravity_products.csv` / `gravity_product_bom_map.csv` are the gravity subset.
 Examples:
 
 | Product | Discipline | Year | Frame | BOM | Confidence |
@@ -261,24 +258,24 @@ Examples:
 
 ### What was recovered from Wayback
 
-The 2019–2021 product pages use the modern `/mountain-bikes/...` tree and are
-available in the CDX index.  For each archived page we extract the name, model
-year and image, then ask Canyon’s PID-fallback endpoint for the exact BOM code.
-That is why old BOMs such as M041, M047, M053, M054, M055, M064, M065, M066,
-M068, M071, M074 and M098 now have direct product links.
+The archived pass covers 2017–2021 gravity pages and 2022–2026 archived
+all-family pages.  For each archived page we extract the name, model year and
+image, then ask Canyon’s PID-fallback endpoint for the exact BOM code.  That is
+why old BOMs such as M041, M047, M053, M054, M055, M064, M065, M066, M068, M071,
+M074, M098 and many road/gravel codes now have direct product links.
 
-All 82 recovered product URLs were checked directly against Canyon: every one
-still resolves (many redirect to `/archive/...`).  The browser therefore links
-to the **live final URL**, not to Wayback.  Wayback is kept only as a secondary
-snapshot link and as the metadata source.
+Archived product URLs were checked directly against Canyon; where the original
+page still resolves (often redirected to `/archive/...`) the browser links to
+the **live final URL**.  Otherwise it links to the Wayback snapshot.  The
+Wayback snapshot is always available as a secondary link and metadata source.
 
 The pre-2019 site used `/mtb/{family}/{slug}` URLs.  Wayback has category pages
 for some of those years, but most individual product pages were never captured;
 where a product page does exist it is used, otherwise the browser falls back to
 a Canyon search for that BOM.
 
-The single `none` row is an old Spectral WMN CFR 9.0 whose frame could not be
-matched confidently; it is left blank rather than guessed.  Current 2027
+The 26 `none` rows are products whose frame could not be matched confidently
+(old or unusual builds); they are left blank rather than guessed.  Current
 models without a published BOM are kept as exact frame codes with `pending`
 status where Canyon’s endpoint supplies a code.
 
@@ -290,29 +287,21 @@ status where Canyon’s endpoint supplies a code.
 | `browser_template.html` | HTML/CSS/JS template used by the browser generator |
 | `build_browser.py` | embed the current CSV/JSON data into `browser.html` |
 | `scrape_canyon_boms.py` | discover year pages, build manifest, download, verify, extract text, serial/PID lookup |
-| `build_product_map.py` | gravity-only product → frame/BOM join |
-| `scrape_all_products.py` | discover/enrich current bike products across all families |
+| `scrape_all_products.py` | discover/enrich live **and archived** bike products across all families |
 | `build_all_product_map.py` | join all-family products to the full 483-BOM archive |
 | `enrich_archive_products.py` | recover old product pages from Wayback CDX |
 | `check_live_urls.py` | verify old product URLs still resolve; record final live URLs |
 | `watch_m204.py` | poll for the M204 BOM and download it when published |
 | `boms.json` / `boms.csv` | full 479-PDF archive manifest |
-| `gravity_boms.json` / `.csv` | 83 gravity PDFs from the year archive |
-| `gravity_boms_extended.json` | archive + post-2024 BOMs |
-| `all_products.csv` | 217 all-family bike/tier pages with best BOM match |
+| `all_products.csv` | 884 all-family bike/tier pages with best BOM match |
 | `all_product_bom_map.csv` | flat all-family product → BOM mapping |
 | `all_boms_extended.json` | 479 archive BOMs + 4 published post-2024 BOMs |
-| `gravity_products.csv` | gravity subset (176 product pages) |
-| `gravity_product_bom_map.csv` | flat gravity product → BOM mapping |
 | `data/all_product_urls.json` | product IDs discovered in current/archived sitemaps |
-| `data/all_products_raw.json` | enriched current bike products (all families) |
-| `data/gravity_products_raw.json` | raw enriched gravity-only product metadata |
-| `data/archive_products_raw.json` | recovered Wayback product pages (2017–2021) |
-| `data/archive_live_status.json` | live status + final URL for every recovered page |
+| `data/all_products_raw.json` | enriched live + archived bike products (all families) |
+| `data/archive_products_raw.json` | recovered Wayback product pages |
+| `data/archive_live_status.json` | live status + final URL for recovered pages |
 | `data/cdx_old_*.json` | Wayback CDX input for the archived pages |
-| `pdfs/gravity/` | 83 downloaded gravity PDFs + `pdftotext -layout` output |
 | `pdfs/post2024/` | M178, M180, M185, M188 root-level BOMs |
-| `gravity_verification.json` | HTTP verification of all 83 gravity PDF URLs |
 
 ## Commands
 
@@ -320,17 +309,10 @@ status where Canyon’s endpoint supplies a code.
 # Rebuild the full archive manifest from the live year pages
 python3 scrape_canyon_boms.py catalog
 
-# Gravity-only manifest (Spectral / Strive / Torque / Sender, including :ON)
-python3 scrape_canyon_boms.py gravity
-
-# Download the gravity set
-python3 scrape_canyon_boms.py download --catalog gravity_boms.json --out pdfs/gravity
-
-# Check that every manifest URL still resolves
-python3 scrape_canyon_boms.py verify --gravity --jobs 6
-
-# Dump text from downloaded PDFs for parsing
-python3 scrape_canyon_boms.py extract-text --dir pdfs/gravity
+# Download / verify / extract text for the archive
+python3 scrape_canyon_boms.py download --catalog boms.json --out pdfs/archive
+python3 scrape_canyon_boms.py verify --jobs 6
+python3 scrape_canyon_boms.py extract-text --dir pdfs/archive
 
 # Look up one bike by serial, or by product ID via pidFallback
 python3 scrape_canyon_boms.py serial 4381 --dry-run
@@ -342,11 +324,11 @@ python3 enrich_archive_products.py
 # Verify old URLs still resolve and record their final live URLs
 python3 check_live_urls.py
 
-# Gravity-only product-page mapping
-python3 build_product_map.py
-
-# Enrich current bike products across all families
+# Enrich live bike products across all families
 python3 scrape_all_products.py
+
+# Enrich archived bike products across all families
+python3 scrape_all_products.py --archived --jobs 3
 
 # All-family product → BOM mapping (483 BOMs)
 python3 build_all_product_map.py
@@ -392,5 +374,5 @@ page.
   from family/material/year.  Verify against the frame code printed on the
   bike before ordering parts.  `exact` means the code came from the endpoint or
   the product image path.
-- **M204:** this is the one current gravity frame whose BOM is deliberately not
+- **M204:** this is the one current frame whose BOM is deliberately not
   public yet.  The watcher is the reliable way to get it on launch day.

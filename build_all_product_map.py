@@ -2,10 +2,10 @@
 """Join all Canyon bike product pages to the full exploded-drawing archive.
 
 Inputs:
-  data/all_products_raw.json       current bike products (all families)
-  data/archive_products_raw.json   recovered 2017-2021 gravity pages
+  data/all_products_raw.json       live + archived products, all families
+  data/archive_products_raw.json   additional legacy Wayback pages
   boms.json                        all 2009-2024 BOM PDFs
-  gravity_boms_extended.json       adds post-2024 root-level BOMs
+  POST2024                         adds post-2024 root-level BOMs
 
 Outputs:
   all_products.csv
@@ -36,15 +36,37 @@ FAMILIES = {
 FAMILY_RE = re.compile(
     "|".join(re.escape(f) for f in sorted(FAMILIES, key=len, reverse=True)), re.I
 )
-GRAVITY = {"Spectral", "Strive", "Torque", "Sender"}
+BASE_CATEGORY = {
+    "Spectral": "Gravity", "Strive": "Gravity", "Torque": "Gravity", "Sender": "Gravity",
+    "Lux": "XC", "Exceed": "XC",
+    "Neuron": "Trail", "Grand Canyon": "Trail",
+    "Inflite": "CX",
+    "Aeroad": "Road", "Ultimate": "Road", "Endurace": "Road", "Speedmax": "Road",
+    "Grail": "Gravel", "Grizl": "Gravel",
+    "Stitched": "Dirt Jump", "Dude": "Fat", "Offspring": "Kids",
+    "Commuter": "Urban", "Roadlite": "Urban", "Precede": "Urban",
+    "Pathlite": "Trekking",
+}
+FOLDER_FAMILY = {
+    "aeroad": "Aeroad", "ultimate": "Ultimate", "endurace": "Endurace", "endurace_on": "Endurace",
+    "speedmax": "Speedmax", "grail": "Grail", "grail_on": "Grail", "grizl": "Grizl", "grizl_on": "Grizl",
+    "inflite": "Inflite", "roadlite": "Roadlite", "roadlite_on": "Roadlite",
+    "commuter": "Commuter", "commuter_on": "Commuter", "precede_on": "Precede",
+    "spectral": "Spectral", "spectral_on": "Spectral", "strive": "Strive", "strive_on": "Strive",
+    "torque": "Torque", "torque_al": "Torque", "torque_on": "Torque", "sender": "Sender",
+    "lux": "Lux", "neuron": "Neuron", "neuron_on": "Neuron", "neuron_spectral": "Neuron",
+    "exceed": "Exceed", "grand_canyon": "Grand Canyon", "grand_canyon_on": "Grand Canyon",
+    "pathlite": "Pathlite", "pathlite_on": "Pathlite", "dude": "Dude", "stitched": "Stitched",
+    "kidsbikes": "Offspring", "nerve": "Neuron", "fitness": "Roadlite", "urban": "Commuter",
+}
 
 # Published only at the root path; M204 is intentionally pending.
 POST2024 = {
-    "M178": {"label": "Spectral AL", "family": "Spectral", "year": "2025", "file": "pdfs/post2024/explosiondrawing-M178-01.pdf"},
-    "M180": {"label": "Sender CFR", "family": "Sender", "year": "2025", "file": "pdfs/post2024/explosiondrawing-M180-01.pdf"},
-    "M185": {"label": "Torque AL", "family": "Torque", "year": "2026", "file": "pdfs/post2024/explosiondrawing-M185-01.pdf"},
-    "M188": {"label": "StriveON", "family": "Strive", "year": "2026", "file": "pdfs/post2024/explosiondrawing-M188-01.pdf"},
-    "M204": {"label": "Spectral ON", "family": "Spectral", "year": "2027", "file": ""},
+    "M178": {"label": "Spectral AL", "family": "Spectral", "category": "Gravity", "year": "2025", "file": "pdfs/post2024/explosiondrawing-M178-01.pdf"},
+    "M180": {"label": "Sender CFR", "family": "Sender", "category": "Gravity", "year": "2025", "file": "pdfs/post2024/explosiondrawing-M180-01.pdf"},
+    "M185": {"label": "Torque AL", "family": "Torque", "category": "Gravity", "year": "2026", "file": "pdfs/post2024/explosiondrawing-M185-01.pdf"},
+    "M188": {"label": "StriveON", "family": "Strive", "category": "E-Gravity", "year": "2026", "file": "pdfs/post2024/explosiondrawing-M188-01.pdf"},
+    "M204": {"label": "Spectral ON", "family": "Spectral", "category": "E-Gravity", "year": "2027", "file": ""},
 }
 
 
@@ -77,6 +99,31 @@ def exists(url: str) -> bool:
         return False
 
 
+def category_for(family_base: str, electric: bool, text: str = "") -> str:
+    if not family_base:
+        return "Other"
+    low = (text or "").lower()
+    if electric:
+        if family_base in {"Spectral", "Strive", "Torque", "Sender"}:
+            return "E-Trail" if "onfly" in low else "E-Gravity"
+        if family_base in {"Lux", "Exceed"}:
+            return "E-XC"
+        if family_base in {"Neuron", "Grand Canyon"}:
+            return "E-Trail"
+        if family_base in {"Aeroad", "Ultimate", "Endurace", "Speedmax", "Roadlite"}:
+            return "E-Road"
+        if family_base in {"Grail", "Grizl"}:
+            return "E-Gravel"
+        if family_base in {"Commuter", "Precede"}:
+            return "E-Urban"
+        if family_base == "Pathlite":
+            return "E-Trekking"
+        return "E-Other"
+    if family_base == "Lux" and "trail" in low:
+        return "Trail"
+    return BASE_CATEGORY.get(family_base, "Other")
+
+
 def parse_product(name: str, extra: str = "") -> dict:
     """Parse a marketing name.  `extra` (image/URL) is used only for material.
 
@@ -98,7 +145,7 @@ def parse_product(name: str, extra: str = "") -> dict:
         "material": material.group(1).upper() if material else "",
         "wmn": bool(re.search(r"\bWMN\b|\bWomen\b", name, re.I)),
         "series_125": bool(re.search(r"\b125\b", f"{name} {extra}")),
-        "gravity": family_base in GRAVITY,
+        "category": category_for(family_base, electric, name),
     }
 
 
@@ -127,6 +174,13 @@ def bom_material(b: dict) -> str:
     return m.group(1).upper() if m else ""
 
 
+def bom_category(b: dict) -> str:
+    family = bom_family(b)
+    if not family:
+        family = FOLDER_FAMILY.get((b.get("asset_family") or "").lower(), "")
+    return category_for(family, bom_electric(b), " ".join(b.get("labels") or []))
+
+
 def best_bom(rec: dict, index: dict[str, list[dict]], parsed: dict) -> tuple[dict | None, str, str]:
     code = base_code(rec.get("bom_code") or rec.get("image_code"))
     year = int(rec.get("model_year") or 0) if str(rec.get("model_year") or "").isdigit() else 0
@@ -153,7 +207,7 @@ def best_bom(rec: dict, index: dict[str, list[dict]], parsed: dict) -> tuple[dic
             "url_stable": root_url(code),
             "post2024": True,
             "published": bool(POST2024.get(code, {}).get("file")),
-            "gravity": parsed["gravity"],
+            "category": parsed["category"],
         }
         return synthetic, "exact", "image frame code"
 
@@ -205,7 +259,7 @@ def main() -> int:
     extended = list(all_boms)
     index: dict[str, list[dict]] = {}
     for b in all_boms:
-        b.setdefault("gravity", bom_family(b) in GRAVITY)
+        b["category"] = bom_category(b)
         for code in b.get("model_codes", []):
             index.setdefault(base_code(code), []).append(b)
     index["__all__"] = all_boms
@@ -227,7 +281,7 @@ def main() -> int:
             "post2024": True,
             "published": published,
             "local_file": meta["file"],
-            "gravity": meta["family"] in GRAVITY,
+            "category": meta["category"],
         }
         if published:
             extended.append(rec)
@@ -293,7 +347,7 @@ def main() -> int:
             "discipline": parsed["discipline"],
             "material": parsed["material"],
             "electric": parsed["electric"],
-            "gravity": parsed["gravity"],
+            "category": parsed["category"],
             "model_year": year or "",
             "year_source": year_source,
             "frame_code": code,
@@ -322,7 +376,7 @@ def main() -> int:
         w.writerows(sorted(rows, key=lambda r: (r["discipline"], r["family"], r["model_year"], r["product_name"] or "")))
 
     with open(ROOT / "all_product_bom_map.csv", "w", newline="", encoding="utf-8") as fh:
-        cols = ["product_id", "product_name", "model_year", "family", "discipline", "product_url",
+        cols = ["product_id", "product_name", "model_year", "family", "discipline", "category", "product_url",
                 "frame_code", "bom_code", "bom_label", "bom_year", "bom_url", "bom_published",
                 "match_confidence", "match_basis"]
         w = csv.DictWriter(fh, fieldnames=cols)
@@ -339,6 +393,7 @@ def main() -> int:
     print("inferred:", sum(1 for r in rows if r["match_confidence"] == "inferred"))
     print("none:", sum(1 for r in rows if r["match_confidence"] == "none"))
     print("disciplines:", {d: sum(1 for r in rows if r["discipline"] == d) for d in sorted({r["discipline"] for r in rows})})
+    print("categories:", {c: sum(1 for r in rows if r["category"] == c) for c in sorted({r["category"] for r in rows})})
     return 0
 
 

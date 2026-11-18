@@ -27,7 +27,9 @@ def main() -> int:
     boms = json.loads(
         (all_boms if all_boms.exists() else ROOT / "gravity_boms_extended.json").read_text(encoding="utf-8")
     )
-    archive = json.loads((ROOT / "boms.json").read_text(encoding="utf-8"))
+    archive = json.loads(
+        (all_boms if all_boms.exists() else ROOT / "boms.json").read_text(encoding="utf-8")
+    )
 
     data = {
         "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -45,7 +47,7 @@ def main() -> int:
     out.write_text(html, encoding="utf-8")
     print(f"wrote {out} ({out.stat().st_size/1024:.0f} KB)")
     print(f"  products: {len(products)}")
-    print(f"  gravity BOMs: {len(boms)}")
+    print(f"  BOMs: {len(boms)}")
     print(f"  full archive: {len(archive)}")
     return 0
 

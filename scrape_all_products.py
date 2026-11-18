@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Enrich all current Canyon bike product pages (not just gravity).
+"""Enrich all Canyon bike product pages across every family.
 
 Reads data/all_product_urls.json (from the current + archived sitemaps) and
-enriches the live bike-category pages: name, model year, image, frame code,
-variants and the exact BOM code from Canyon's PID-fallback endpoint.
+enriches live or archived bike-category pages: name, model year, image, frame
+code, variants and the exact BOM code from Canyon's PID-fallback endpoint.
 
 Output: data/all_products_raw.json (resumable).
 """
@@ -24,6 +24,14 @@ ROOT = Path(__file__).resolve().parent
 URLS = ROOT / "data/all_product_urls.json"
 OUT = ROOT / "data/all_products_raw.json"
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0 Safari/537.36"
+WB_UA = "canyon-bom-research/1.0 (+https://www.canyon.com/)"
+ARCHIVE_TS = {
+    "2022-06": "20220624025705",
+    "2023-06": "20230601020435",
+    "2024-06": "20240601045629",
+    "2025-06": "20250601045840",
+    "2026-01": "20260101065929",
+}
 ENDPOINT = (
     "https://www.canyon.com/on/demandware.store/Sites-US-Site/en_US/"
     "Utils-SearchBike?pidFallback=true&template=explosionDrawings&serialNumber={pid}"
@@ -42,16 +50,21 @@ FAMILIES = [
 FAMILY_RE = re.compile("|".join(re.escape(f) for f in sorted(FAMILIES, key=len, reverse=True)), re.I)
 
 
-def fetch(url: str, timeout: int = 45, retries: int = 2) -> str:
+def fetch(url: str, timeout: int = 45, retries: int = 2, ua: str = UA, wayback: bool = False) -> str:
     last = None
     for attempt in range(retries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": UA})
+            req = urllib.request.Request(url, headers={"User-Agent": ua})
             with urllib.request.urlopen(req, timeout=timeout) as resp:
-                return resp.read().decode("utf-8", "replace")
+                body = resp.read().decode("utf-8", "replace")
+            if wayback and ("Temporarily Offline" in body or (
+                "Internet Archive" in body and len(body) < 60_000
+            )):
+                raise RuntimeError("Wayback temporarily offline")
+            return body
         except Exception as exc:  # noqa: BLE001
             last = exc
-            time.sleep(2 * (attempt + 1))
+            time.sleep(3 * (attempt + 1))
     raise RuntimeError(str(last))
 
 
@@ -143,36 +156,77 @@ def top_category(url: str) -> str:
     return parts[1] if len(parts) > 1 else ""
 
 
+def earliest_archive_ts(seen: list[str]) -> str | None:
+    labels = [s for s in seen if s in ARCHIVE_TS]
+    return ARCHIVE_TS[sorted(labels, key=lambda s: ARCHIVE_TS[s])[0]] if labels else None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--include-outlet", action="store_true")
+    ap.add_argument("--archived", action="store_true", help="enrich archived (non-live) bike URLs")
     ap.add_argument("--limit", type=int)
-    ap.add_argument("--jobs", type=int, default=4)
+    ap.add_argument("--jobs", type=int, default=3)
     args = ap.parse_args()
 
     urls = json.loads(URLS.read_text(encoding="utf-8"))
-    selected = []
-    for rec in urls.values():
-        if "live" not in rec.get("seen", []):
-            continue
-        cat = top_category(rec["url"])
-        if cat not in BIKE_CATEGORIES and not (args.include_outlet and cat == "outlet-bikes"):
-            continue
-        selected.append(rec)
-    selected.sort(key=lambda r: int(r["id"]))
-    if args.limit:
-        selected = selected[: args.limit]
-    print(f"{len(selected)} live bike-category product URLs", flush=True)
-
     existing: dict[str, dict] = {}
     if OUT.exists():
         for rec in json.loads(OUT.read_text(encoding="utf-8")):
             existing[str(rec["id"])] = rec
 
+    selected = []
+    for rec in urls.values():
+        cat = top_category(rec["url"])
+        if cat not in BIKE_CATEGORIES and not (args.include_outlet and cat == "outlet-bikes"):
+            continue
+        if args.archived:
+            if "live" in rec.get("seen", []):
+                continue
+            if str(rec["id"]) in existing and existing[str(rec["id"])].get("name"):
+                continue
+            if not earliest_archive_ts(rec.get("seen", [])):
+                continue
+        else:
+            if "live" not in rec.get("seen", []):
+                continue
+        selected.append(rec)
+    selected.sort(key=lambda r: int(r["id"]))
+    if args.limit:
+        selected = selected[: args.limit]
+    print(f"{len(selected)} {'archived' if args.archived else 'live'} bike-category product URLs", flush=True)
+
     def job(rec: dict) -> dict:
         pid = str(rec["id"])
         if pid in existing and existing[pid].get("name") and not existing[pid].get("error"):
             return existing[pid]
+
+        if args.archived:
+            ts = earliest_archive_ts(rec.get("seen", []))
+            wb_url = f"https://web.archive.org/web/{ts}id_/{rec['url']}"
+            try:
+                body = fetch(wb_url, ua=WB_UA, wayback=True, retries=2)
+                out = parse(pid, rec["url"], body)
+                out.update({
+                    "page_source": "wayback",
+                    "product_url": f"https://web.archive.org/web/{ts}/{rec['url']}",
+                    "archive_url": f"https://web.archive.org/web/{ts}/{rec['url']}",
+                    "live_url": rec["url"],
+                    "archive_timestamp": ts,
+                    "seen": ["wayback"],
+                })
+                if not FAMILY_RE.search(out.get("name") or ""):
+                    out["error"] = "not a bike family"
+                return out
+            except Exception:
+                try:
+                    body = fetch(rec["url"], ua=UA, retries=1)
+                    out = parse(pid, rec["url"], body)
+                    if not FAMILY_RE.search(out.get("name") or ""):
+                        out["error"] = "not a bike family"
+                    return out
+                except Exception as exc:  # noqa: BLE001
+                    return {"id": pid, "url": rec["url"], "error": str(exc), "seen": ["wayback"]}
         try:
             body = fetch(rec["url"])
             out = parse(pid, rec["url"], body)

@@ -6,7 +6,6 @@ build:
   stage: build
   image: python:3.12-alpine
   script:
-    - python3 build_product_map.py
     - python3 build_all_product_map.py
     - python3 build_browser.py
   artifacts:
@@ -15,9 +14,6 @@ build:
       - all_products.csv
       - all_product_bom_map.csv
       - all_boms_extended.json
-      - gravity_products.csv
-      - gravity_product_bom_map.csv
-      - gravity_boms_extended.json
     expire_in: 1 week
 
 pages:
@@ -29,7 +25,7 @@ pages:
   script:
     - mkdir -p public/pdfs
     - cp browser.html public/index.html
-    - cp README.md M204.md all_products.csv all_product_bom_map.csv all_boms_extended.json gravity_products.csv gravity_product_bom_map.csv gravity_boms.csv gravity_boms_extended.json public/
+    - cp README.md M204.md all_products.csv all_product_bom_map.csv all_boms_extended.json public/
     - cp -r pdfs/post2024 public/pdfs/
   artifacts:
     paths:
